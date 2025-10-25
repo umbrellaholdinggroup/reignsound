@@ -56,7 +56,7 @@ export default function Page() {
         <ol style={{ paddingLeft: "2em" }}>
           <li>
             Reignsound Incorporated<br />
-            <a href="mailto:reignsoundrecords@gmail.com">reignsoundrecords@gmail.com</a><br />
+            <a href="mailto:reignsoundrecords@gmail.com">reignsound@email.com</a><br />
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
             Website: <a href="https://reignsound.vercel.app">reignsound.vercel.app</a>
           </li>
