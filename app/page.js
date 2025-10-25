@@ -25,11 +25,11 @@ export default function Page() {
       <h1 className="brand-name">Reignsound&trade;</h1>
 
       <p className="brand-description">
-        Reignsound&trade; is a global, public-facing administrative and holding company organized under New York (N.Y.) law in the United States of America (U.S.A.).
+        Reignsound&trade; is a global, public-facing administrative and holding company organized under New York ("N.Y.") law in the United States of America ("U.S.A.").
       </p>
 
       <p className="document-description">
-        This document is the official digital agreement ("Agreement") between Reignsound&trade; ("the Company") and all users accessing or interacting with the Company's platforms, products, or services (collectively, the Company's "Goods and Services," each, a "Good" or "Service"), including this website (https://reignsound.vercel.app).
+        This document is the official digital agreement ("Agreement") between Reignsound&trade; ("Company") and all users accessing or interacting with the Company's platforms, products, or services (collectively, the Company's "Goods and Services," each, a "Good" or "Service"), including this website (https://reignsound.vercel.app).
       </p>
 
       <h2 className="section-title">Terms and Conditions (T&amp;C)</h2>
@@ -57,7 +57,7 @@ export default function Page() {
 
         <h6 className="sub-sub-sub-subsection-title">Internal Authority</h6>
         <p className="sub-sub-subsection-description">
-          Reignsound&trade; is an administrative and holding company operating worldwide under the jurisdiction of New York State (N.Y.S.), U.S.A., in compliance with all applicable federal, state, and local laws and regulations.
+          Reignsound&trade; is an administrative and holding company operating worldwide under the jurisdiction of New York State ("N.Y.S."), U.S.A., in compliance with all applicable federal, state, and local laws and regulations.
         </p>
 
         <ol style={{ paddingLeft: "2em" }}>
@@ -120,7 +120,7 @@ export default function Page() {
 
         <ol style={{ paddingLeft: "2em" }}>
           <li>
-            Consumer Protection Division — NYS Attorney General<br />
+            Consumer Protection Division — N.Y.S. Attorney General<br />
             E-mail: <a href="mailto:consumer@ag.ny.gov">consumer@ag.ny.gov</a><br />
             Phone: <a href="tel:18007717755">+1 800 771 7755</a><br />
             Website: <a href="https://ag.ny.gov/consumer" target="_blank">ag.ny.gov</a>
