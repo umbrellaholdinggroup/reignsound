@@ -29,7 +29,7 @@ export default function Page() {
       </p>
 
       <p className="document-description">
-        This document is the official digital agreement ("Agreement") between Reignsound™ ("the Company") and all users accessing or interacting with the Company's platforms, products, or services (collectively, the Company's "Goods and Services," each, a "Good" or "Service"), including this website (https://reignsound.vercel.app).
+        This document is the official digital agreement ("Agreement") between Reignsound&trade; ("the Company") and all users accessing or interacting with the Company's platforms, products, or services (collectively, the Company's "Goods and Services," each, a "Good" or "Service"), including this website (https://reignsound.vercel.app).
       </p>
 
       <h2 className="section-title">Terms and Conditions (T&amp;C)</h2>
@@ -40,13 +40,13 @@ export default function Page() {
       <h3 className="subsection-title">Agreement Framework</h3>
       <div className="subsection-description">
         <p>
-          The "Agreement Framework" defines the foundation of all agreements within Reignsound&trade; ― including the authority and purpose by which they're made.
+          The "Agreement Framework" establishes the framework of all agreements within Reignsound&trade; ― including the authority and purpose by which they're made.
         </p>
       </div>
 
       <h4 className="sub-subsection-title">Agreement Authority</h4>
       <p className="subsection-description">
-        The "Agreement Authority" defines the intention behind the production of the Agreement &mdash; each Reignsound&trade; Good or Service is governed by it's own sub-agreement, which falls under the umbrella of this master Agreement.
+        The "Agreement Authority" defines the scope and intent of the Agreement — each Reignsound&trade; Good or Service is governed by its own sub-agreement, which falls under the umbrella of this master Agreement.
       </p>
 
       <div className="list">
