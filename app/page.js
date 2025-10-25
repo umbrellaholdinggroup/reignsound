@@ -3,8 +3,8 @@
 import "../public/styles/style.css";
 
 export const metadata = {
-  title: "Legal - Reignsound™",
-  description: "Official digital legal agreement for Reignsound™."
+  title: "Reignsound™: Administrative & Holding Company - Operate Worldwide",
+  description: "Reignsound™ is a New York-based administrative and holding company operating globally. Discover our services, subsidiaries, and official filings."
 };
 
 export default function Page() {
@@ -24,12 +24,12 @@ export default function Page() {
 
       <h1 className="brand-name">Reignsound&trade;</h1>
 
-      <p className="document-description">
-        This document is the official digital agreement ("Agreement") between Reignsound&trade; ("the Company") and all users accessing or interacting with the Company's platforms, products, or services (collectively referred to as "Reignsound&trade; Goods" or "Reignsound&trade; Services"), including this website (https://reignsound.vercel.app).
+      <p className="brand-description">
+        Reignsound&trade; is a global, public-facing administrative and holding company organized under New York (N.Y.) law in the United States of America (U.S.A.).
       </p>
 
-      <p className="brand-description">
-        Reignsound is a global, public-facing administrative and holding company organized under the laws of the State of New York (NY), United States of America (USA).
+      <p className="document-description">
+        This document is the official digital agreement ("Agreement") between Reignsound™ ("the Company") and all users accessing or interacting with the Company's platforms, products, or services (collectively, the Company's "Goods and Services," each, a "Good" or "Service"), including this website (https://reignsound.vercel.app).
       </p>
 
       <h2 className="section-title">Terms and Conditions (T&amp;C)</h2>
@@ -46,24 +46,24 @@ export default function Page() {
 
       <h4 className="sub-subsection-title">Agreement Authority</h4>
       <p className="subsection-description">
-        The "Agreement Authority" defines the intention behind the production of the Agreement.
+        The "Agreement Authority" defines the intention behind the production of the Agreement &mdash; each Reignsound&trade; Good or Service is governed by it's own sub-agreement, which falls under the umbrella of this master Agreement.
       </p>
 
       <div className="list">
         <h5 className="sub-sub-subsection-title">Agreement Authority List</h5>
         <p className="sub-subsection-description">
-          The "Agreement Authority List" recognizes authorities responsible for creating, approving, and enforcing the Agreement.
+          The "Agreement Authority List" recognizes authorities responsible for creating, approving, and enforcing Agreements.
         </p>
 
         <h6 className="sub-sub-sub-subsection-title">Internal Authority</h6>
         <p className="sub-sub-subsection-description">
-          Reignsound&trade; is an administrative and holding company operating worldwide under the jurisdiction of New York State (NYS), USA, in compliance with all applicable federal, state, and local laws and regulations.
+          Reignsound&trade; is an administrative and holding company operating worldwide under the jurisdiction of New York State (N.Y.S.), U.S.A., in compliance with all applicable federal, state, and local laws and regulations.
         </p>
 
         <ol style={{ paddingLeft: "2em" }}>
           <li>
             Reignsound&trade;<br />
-            <a href="mailto:reignsoundrecords@gmail.com">reignsound@email.com</a><br />
+            E-mail: <a href="mailto:reignsoundrecords@gmail.com">reignsound@email.com</a><br />
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
             Website: <a href="https://reignsound.vercel.app">reignsound.vercel.app</a>
           </li>
@@ -76,26 +76,26 @@ export default function Page() {
 
         <ol style={{ paddingLeft: "2em" }}>
           <li>
-            Consumer Financial Protection Bureau (CFPB)<br />
-            <a href="mailto:cfpb-hr@cfpb.gov">cfpb-hr@cfpb.gov</a><br />
+            Consumer Financial Protection Bureau (C.F.P.B.)<br />
+            E-mail: <a href="mailto:cfpb-hr@cfpb.gov">cfpb-hr@cfpb.gov</a><br />
             Phone: <a href="tel:+18554112372" className="phone-link">+1 855 411 2372</a><br />
             Website: <a href="https://www.consumerfinance.gov/about-us/contact-us/">consumerfinance.gov</a>
           </li>
 
           <li>
-            Department of Commerce (DOC)<br />
+            Department of Commerce (D.O.C.)<br />
             Phone: <a href="tel:+12024822000" className="phone-link">+1 202 482 2000</a><br />
             Website: <a href="https://learn.commerce.gov/contact-us.html">learn.commerce.gov</a>
           </li>
 
           <li>
-            Federal Communications Commission (FCC)<br />
+            Federal Communications Commission (F.C.C.)<br />
             Phone: <a href="tel:+18882255322" className="phone-link">+1 888 225 5322</a><br />
             Website: <a href="https://www.fcc.gov/about/contact">fcc.gov</a>
           </li>
 
           <li>
-            Federal Trade Commission (FTC)<br />
+            Federal Trade Commission (F.T.C.)<br />
             Phone: <a href="tel:+12023262222" className="phone-link">+1 202 326 2222</a><br />
             Website: <a href="https://www.ftc.gov/about-ftc/contact">ftc.gov</a>
           </li>
@@ -107,7 +107,7 @@ export default function Page() {
           </li>
 
           <li>
-            United States Patent &amp; Trademark Office (USPTO)<br />
+            United States Patent &amp; Trademark Office (U.S.P.T.O.)<br />
             Phone: <a href="tel:+15712721000" className="phone-link">+1 571 272 1000</a><br />
             Website: <a href="https://www.uspto.gov/about-us/contact-us">uspto.gov</a>
           </li>
@@ -121,14 +121,14 @@ export default function Page() {
         <ol style={{ paddingLeft: "2em" }}>
           <li>
             Consumer Protection Division — NYS Attorney General<br />
-            <a href="mailto:consumer@ag.ny.gov">consumer@ag.ny.gov</a><br />
+            E-mail: <a href="mailto:consumer@ag.ny.gov">consumer@ag.ny.gov</a><br />
             Phone: <a href="tel:18007717755">+1 800 771 7755</a><br />
             Website: <a href="https://ag.ny.gov/consumer" target="_blank">ag.ny.gov</a>
           </li>
 
           <li>
-            New York State Department of State (NYSDOS)<br />
-            <a href="mailto:consumer@dos.ny.gov">consumer@dos.ny.gov</a><br />
+            New York State Department of State (N.Y.S.D.O.S.)<br />
+            E-mail: <a href="mailto:consumer@dos.ny.gov">consumer@dos.ny.gov</a><br />
             Phone: <a href="tel:18006971220">+1 800 697 1220</a><br />
             Website: <a href="https://dos.ny.gov/consumer-protection" target="_blank">dos.ny.gov</a>
           </li>
