@@ -1,10 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import "../public/styles/style.css";
+import Image from "next/image";
 
 export const metadata = {
   title: "Reignsound™: Administrative & Holding Company - Operate Worldwide",
-  description: "Reignsound™ is a New York-based administrative and holding company operating globally. Discover our services, subsidiaries, and official filings."
+  description:
+    "Reignsound™ is a New York-based administrative and holding company operating globally. Discover our services, subsidiaries, and official filings.",
 };
 
 export default function Page() {
@@ -12,12 +14,21 @@ export default function Page() {
     <main className="legal-container">
       <head>
         <title>Reignsound™: Administrative & Holding Company - Operate Worldwide</title>
-        <meta name="description" content="Reignsound™ is a New York-based administrative and holding company operating globally. Discover our services, subsidiaries, and official filings." />
+        <meta
+          name="description"
+          content="Reignsound™ is a New York-based administrative and holding company operating globally. Discover our services, subsidiaries, and official filings."
+        />
         <meta name="author" content="Reignsound™" />
 
         {/* Open Graph for social sharing */}
-        <meta property="og:title" content="Reignsound™: Administrative & Holding Company - Operate Worldwide" />
-        <meta property="og:description" content="Reignsound™ is a New York-based administrative and holding company operating globally. Discover our services, subsidiaries, and official filings." />
+        <meta
+          property="og:title"
+          content="Reignsound™: Administrative & Holding Company - Operate Worldwide"
+        />
+        <meta
+          property="og:description"
+          content="Reignsound™ is a New York-based administrative and holding company operating globally. Discover our services, subsidiaries, and official filings."
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://reignsound.vercel.app" />
       </head>
@@ -81,31 +92,26 @@ export default function Page() {
             Phone: <a href="tel:+18554112372" className="phone-link">+1 855 411 2372</a><br />
             Website: <a href="https://www.consumerfinance.gov/about-us/contact-us/">consumerfinance.gov</a>
           </li>
-
           <li>
             Department of Commerce (D.O.C.)<br />
             Phone: <a href="tel:+12024822000" className="phone-link">+1 202 482 2000</a><br />
             Website: <a href="https://learn.commerce.gov/contact-us.html">learn.commerce.gov</a>
           </li>
-
           <li>
             Federal Communications Commission (F.C.C.)<br />
             Phone: <a href="tel:+18882255322" className="phone-link">+1 888 225 5322</a><br />
             Website: <a href="https://www.fcc.gov/about/contact">fcc.gov</a>
           </li>
-
           <li>
             Federal Trade Commission (F.T.C.)<br />
             Phone: <a href="tel:+12023262222" className="phone-link">+1 202 326 2222</a><br />
             Website: <a href="https://www.ftc.gov/about-ftc/contact">ftc.gov</a>
           </li>
-
           <li>
             United States Copyright Office<br />
             Phone: <a href="tel:+12027073000" className="phone-link">+1 202 707 3000</a><br />
             Website: <a href="https://www.copyright.gov/help/">copyright.gov</a>
           </li>
-
           <li>
             United States Patent &amp; Trademark Office (U.S.P.T.O.)<br />
             Phone: <a href="tel:+15712721000" className="phone-link">+1 571 272 1000</a><br />
@@ -125,7 +131,6 @@ export default function Page() {
             Phone: <a href="tel:18007717755">+1 800 771 7755</a><br />
             Website: <a href="https://ag.ny.gov/consumer" target="_blank">ag.ny.gov</a>
           </li>
-
           <li>
             New York State Department of State (N.Y.S.D.O.S.)<br />
             E-mail: <a href="mailto:consumer@dos.ny.gov">consumer@dos.ny.gov</a><br />
@@ -158,34 +163,33 @@ export default function Page() {
 
       <h2>Disclaimers &amp; Protections</h2>
       <div className="disclaimer-list">
-        <p>
+        <div>
           <strong>1. OWNERSHIP RIGHTS:</strong><br />
           All Goods or Services provided by Reignsound&trade; are produced and owned solely by Reignsound&trade;, or in collaboration with partners under proper agreements, rights, and licenses where applicable.
-        </p>
+        </div>
 
-        <p>
+        <div>
           <strong>2. LEGAL:</strong><br />
           Reignsound&trade; takes precautionary steps<sup>1</sup> to ensure Goods and Services are in compliance with global regulations.
-          <p className="sub-sub-subsection-description">
+          <div className="sub-sub-subsection-description">
             For any discrepancies or legal inquiries regarding Reignsound&trade; or any Reignsound&trade; subsidiaries, contact:<br />
-            <a href="mailto:legal.reignsound@gmail.com" className="standalone-e-mail" style={{  }}>legal.reignsound@gmail.com</a><br />
-          </p>
-          
-        </p>
+            <a href="mailto:legal.reignsound@gmail.com" className="standalone-e-mail">legal.reignsound@gmail.com</a><br />
+          </div>
+        </div>
 
-        <p>
+        <div>
           <strong>3. FEEDBACK:</strong><br />
           Reignsound&trade; values your input &mdash; let us know what you think &mdash; it helps us improve our Goods and Services.
-          <p className="sub-sub-subsection-description">
+          <div className="sub-sub-subsection-description">
             Send feedback to:<br />
             <a href="mailto:feedback.reignsound@gmail.com" className="standalone-e-mail">feedback.reignsound@gmail.com</a>
-          </p>
-        </p>
+          </div>
+        </div>
 
-        <p>
+        <div>
           <strong>4. TRADEMARKS:</strong><br />
           Reignsound&trade; respects all intellectual property laws: all trademarks and copyrights remain property of their respective owners.
-        </p>
+        </div>
       </div>
 
       {/* Reignsound™ Partners Section */}
@@ -196,70 +200,36 @@ export default function Page() {
 
       {(() => {
         const partners = [
-          { logo: "./partners/logo-1.png", url: "https://partner1.com" },
-          { logo: "./partners/logo-2.png", url: "https://partner2.com" },
-          { logo: "./partners/logo-3.png", url: "https://partner3.com" },
-          { logo: "./partners/logo-4.png", url: "https://partner4.com" },
-          { logo: "./partners/logo-5.png", url: "https://partner5.com" },
-          { logo: "./partners/logo-6.png", url: "https://partner6.com" },
+          { logo: "/partners/logo-1.png", url: "https://partner1.com" },
+          { logo: "/partners/logo-2.png", url: "https://partner2.com" },
+          { logo: "/partners/logo-3.png", url: "https://partner3.com" },
+          { logo: "/partners/logo-4.png", url: "https://partner4.com" },
+          { logo: "/partners/logo-5.png", url: "https://partner5.com" },
+          { logo: "/partners/logo-6.png", url: "https://partner6.com" },
         ];
+
+        const rows = ["scroll-row-1", "scroll-row-2", "scroll-row-3"];
 
         return (
           <div className="partner-carousel">
-            {/* Row 1 */}
-            <div className="scroll-row scroll-row-1">
-              {[...Array(12)].map((_, i) => {
-                const item = partners[i % partners.length];
-                return (
-                  <a
-                    key={`p-r1-${i}`}
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={item.logo} alt={`Partner ${i + 1}`} />
+            {rows.map((rowClass, rowIndex) => (
+              <div key={rowIndex} className={`scroll-row ${rowClass}`}>
+                {partners.map((item, i) => (
+                  <a key={i} href={item.url} target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={item.logo}
+                      alt={`Partner ${i + 1}`}
+                      width={150}
+                      height={150}
+                      style={{ objectFit: "contain" }}
+                    />
                   </a>
-                );
-              })}
-            </div>
-
-            {/* Row 2 (reverse direction) */}
-            <div className="scroll-row scroll-row-2">
-              {[...Array(12)].map((_, i) => {
-                const item = partners[i % partners.length];
-                return (
-                  <a
-                    key={`p-r2-${i}`}
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={item.logo} alt={`Partner ${i + 1}`} />
-                  </a>
-                );
-              })}
-            </div>
-
-            {/* Row 3 (slower speed, forward direction) */}
-            <div className="scroll-row scroll-row-3">
-              {[...Array(12)].map((_, i) => {
-                const item = partners[i % partners.length];
-                return (
-                  <a
-                    key={`p-r3-${i}`}
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={item.logo} alt={`Partner ${i + 1}`} />
-                  </a>
-                );
-              })}
-            </div>
+                ))}
+              </div>
+            ))}
           </div>
         );
       })()}
-      
 
       {/* Reignsound™ Subsidiaries Section */}
       <h2>Reignsound™ Subsidiaries</h2>
@@ -269,66 +239,34 @@ export default function Page() {
 
       {(() => {
         const subsidiaries = [
-          { logo: "./subsidiaries/logo-1.png", url: "https://youtube.com/@reignsoundglobal" },
-          { logo: "./subsidiaries/logo-2.png", url: "https://reignsound.github.io" },
+          { logo: "/subsidiaries/logo-1.png", url: "https://youtube.com/@reignsoundglobal" },
+          { logo: "/subsidiaries/logo-2.png", url: "https://reignsound.github.io" },
           { logo: "/subsidiaries/logo-3.png", url: "https://brand3.com" },
           { logo: "/subsidiaries/logo-4.png", url: "https://brand4.com" },
           { logo: "/subsidiaries/logo-5.png", url: "https://brand5.com" },
           { logo: "/subsidiaries/logo-6.png", url: "https://brand6.com" },
         ];
+
+        const rows = ["scroll-row-1", "scroll-row-2", "scroll-row-3"];
+
         return (
           <div className="subsidiary-carousel">
-        {/* Row 1 */}
-        <div className="scroll-row scroll-row-1">
-          {[...Array(12)].map((_, i) => {
-            const item = subsidiaries[i % subsidiaries.length];
-            return (
-              <a
-                key={`r1-${i}`}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={item.logo} alt={`Subsidiary ${i + 1}`} />
-              </a>
-            );
-          })}
-        </div>
-
-        {/* Row 2 (reverse direction) */}
-        <div className="scroll-row scroll-row-2">
-          {[...Array(12)].map((_, i) => {
-            const item = subsidiaries[i % subsidiaries.length];
-            return (
-              <a
-                key={`r2-${i}`}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={item.logo} alt={`Subsidiary ${i + 1}`} />
-              </a>
-            );
-          })}
-        </div>
-
-        {/* Row 3 (slower speed, forward direction) */}
-        <div className="scroll-row scroll-row-3">
-          {[...Array(12)].map((_, i) => {
-            const item = subsidiaries[i % subsidiaries.length];
-            return (
-              <a
-                key={`r3-${i}`}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={item.logo} alt={`Subsidiary ${i + 1}`} />
-              </a>
-            );
-          })}
-        </div>
-      </div>
+            {rows.map((rowClass, rowIndex) => (
+              <div key={rowIndex} className={`scroll-row ${rowClass}`}>
+                {subsidiaries.map((item, i) => (
+                  <a key={i} href={item.url} target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={item.logo}
+                      alt={`Subsidiary ${i + 1}`}
+                      width={150}
+                      height={150}
+                      style={{ objectFit: "contain" }}
+                    />
+                  </a>
+                ))}
+              </div>
+            ))}
+          </div>
         );
       })()}
 
