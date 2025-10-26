@@ -146,6 +146,16 @@ export default function Page() {
         2. This Agreement aims to protect both the Company and its users by establishing clear guidelines for acceptable behavior, data privacy, intellectual property rights, and dispute resolution.
       </p>
 
+      <h3>Company Responsibilities</h3>
+      <p className="subsection-description">
+        The "Company Responsibilities" section of the Agreement outlines what’s expected of the Company in terms of service delivery, data protection, and compliance with applicable laws and regulations.
+      </p>
+
+      <h3>User Responsibilities</h3>
+      <p className="subsection-description">
+        The "User Responsibilities" section of the Agreement outlines what’s expected of users in terms of conduct, compliance, and lawful use of Reignsound&trade; resources.
+      </p>
+
       <h2>Disclaimers &amp; Protections</h2>
       <div className="disclaimer-list">
         <p>
@@ -178,15 +188,149 @@ export default function Page() {
         </p>
       </div>
 
-      <h3>Company Responsibilities</h3>
-      <p className="subsection-description">
-        The "Company Responsibilities" section of the Agreement outlines what’s expected of the Company in terms of service delivery, data protection, and compliance with applicable laws and regulations.
+      {/* Reignsound™ Partners Section */}
+      <h2>Reignsound™ Partners</h2>
+      <p className="section-description">
+        Reignsound™ partners represent a diverse network of collaborators and affiliates.
       </p>
 
-      <h3>User Responsibilities</h3>
-      <p className="subsection-description">
-        The "User Responsibilities" section of the Agreement outlines what’s expected of users in terms of conduct, compliance, and lawful use of Reignsound&trade; resources.
+      {(() => {
+        const partners = [
+          { logo: "./partners/logo-1.png", url: "https://partner1.com" },
+          { logo: "./partners/logo-2.png", url: "https://partner2.com" },
+          { logo: "./partners/logo-3.png", url: "https://partner3.com" },
+          { logo: "./partners/logo-4.png", url: "https://partner4.com" },
+          { logo: "./partners/logo-5.png", url: "https://partner5.com" },
+          { logo: "./partners/logo-6.png", url: "https://partner6.com" },
+        ];
+
+        return (
+          <div className="partner-carousel">
+            {/* Row 1 */}
+            <div className="scroll-row scroll-row-1">
+              {[...Array(12)].map((_, i) => {
+                const item = partners[i % partners.length];
+                return (
+                  <a
+                    key={`p-r1-${i}`}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={item.logo} alt={`Partner ${i + 1}`} />
+                  </a>
+                );
+              })}
+            </div>
+
+            {/* Row 2 (reverse direction) */}
+            <div className="scroll-row scroll-row-2">
+              {[...Array(12)].map((_, i) => {
+                const item = partners[i % partners.length];
+                return (
+                  <a
+                    key={`p-r2-${i}`}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={item.logo} alt={`Partner ${i + 1}`} />
+                  </a>
+                );
+              })}
+            </div>
+
+            {/* Row 3 (slower speed, forward direction) */}
+            <div className="scroll-row scroll-row-3">
+              {[...Array(12)].map((_, i) => {
+                const item = partners[i % partners.length];
+                return (
+                  <a
+                    key={`p-r3-${i}`}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={item.logo} alt={`Partner ${i + 1}`} />
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })()}
+      
+
+      {/* Reignsound™ Subsidiaries Section */}
+      <h2>Reignsound™ Subsidiaries</h2>
+      <p className="section-description">
+        Reignsound™ subsidiaries represent our extended family of brands &mdash; operating across creative, administrative, and strategic sectors worldwide.
       </p>
+
+      {(() => {
+        const subsidiaries = [
+          { logo: "./subsidiaries/logo-1.png", url: "https://youtube.com/@reignsoundglobal" },
+          { logo: "./subsidiaries/logo-2.png", url: "https://reignsound.github.io" },
+          { logo: "/subsidiaries/logo-3.png", url: "https://brand3.com" },
+          { logo: "/subsidiaries/logo-4.png", url: "https://brand4.com" },
+          { logo: "/subsidiaries/logo-5.png", url: "https://brand5.com" },
+          { logo: "/subsidiaries/logo-6.png", url: "https://brand6.com" },
+        ];
+        return (
+          <div className="subsidiary-carousel">
+        {/* Row 1 */}
+        <div className="scroll-row scroll-row-1">
+          {[...Array(12)].map((_, i) => {
+            const item = subsidiaries[i % subsidiaries.length];
+            return (
+              <a
+                key={`r1-${i}`}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={item.logo} alt={`Subsidiary ${i + 1}`} />
+              </a>
+            );
+          })}
+        </div>
+
+        {/* Row 2 (reverse direction) */}
+        <div className="scroll-row scroll-row-2">
+          {[...Array(12)].map((_, i) => {
+            const item = subsidiaries[i % subsidiaries.length];
+            return (
+              <a
+                key={`r2-${i}`}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={item.logo} alt={`Subsidiary ${i + 1}`} />
+              </a>
+            );
+          })}
+        </div>
+
+        {/* Row 3 (slower speed, forward direction) */}
+        <div className="scroll-row scroll-row-3">
+          {[...Array(12)].map((_, i) => {
+            const item = subsidiaries[i % subsidiaries.length];
+            return (
+              <a
+                key={`r3-${i}`}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={item.logo} alt={`Subsidiary ${i + 1}`} />
+              </a>
+            );
+          })}
+        </div>
+      </div>
+        );
+      })()}
 
       <footer>© Reignsound&trade;</footer>
     </main>
