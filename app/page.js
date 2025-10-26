@@ -29,7 +29,7 @@ export default function Page() {
       </p>
 
       <p className="document-description">
-        This document is the official digital agreement ("Agreement") between Reignsound&trade; ("Company") and all users accessing or interacting with the Company's platforms, products, or services &mdash; collectively, the Company's "Goods and Services," each, a "Good" or "Service" &mdash; including this website (https://reignsound.vercel.app).
+        This document is the official digital agreement ("Agreement") between Reignsound&trade; ("Company") and all users accessing or interacting with the Company's platforms, products, and/or services &mdash; collectively, the Company's "Goods and Services," each, a "Good" or "Service" &mdash; including this website (https://reignsound.vercel.app).
       </p>
 
       <h2 className="section-title">Terms and Conditions (T&amp;C)</h2>
