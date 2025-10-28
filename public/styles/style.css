@@ -289,3 +289,8 @@ li a[href^="http"] { font-weight: bold; text-decoration: underline; color: var(-
   .scroll-row a img { height: 36px; }
   .subsidiaries-section .section-description { font-size: 0.85rem; }
 }
+
+sup {
+  font-size:0.5em;
+  vertical-align: 0.7em;
+}
