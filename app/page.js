@@ -181,7 +181,7 @@ export default function Page() {
       </p>
 
       <h2>Disclaimers &amp; Protections</h2>
-      <div className="disclaimer-list">
+      <div className="disclaimer-list" style={{ color: "#ccc" }}>
         <div>
           <strong>1. OWNERSHIP RIGHTS:</strong><br />
           All Goods or Services provided by Reignsound&trade; are produced and owned solely by Reignsound&trade;, or in collaboration with partners under proper agreements, rights, and licenses where applicable.
