@@ -68,15 +68,34 @@ export default function Page() {
 
         <h6 className="sub-sub-sub-subsection-title">Internal Authority</h6>
         <p className="sub-sub-subsection-description">
-          Reignsound&trade; is an administrative and holding company operating worldwide under the jurisdiction of New York State ("N.Y.S."), U.S.A., in compliance with all applicable federal, state, and local laws and regulations.
+          Internal authorities consist of Reignsound&trade; (the globally operating, public-facing, administrative and holding company) and its subsidiaries.
         </p>
 
         <ol style={{ paddingLeft: "2em" }}>
           <li>
             Reignsound&trade;<br />
-            E-mail: <a href="mailto:reignsoundrecords@gmail.com">reignsound@email.com</a><br />
+            <a href="mailto:reignsound@email.com">reignsound@email.com</a><br />
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
             Website: <a href="https://reignsound.vercel.app">reignsound.vercel.app</a>
+          </li>
+
+          <li>
+            COMPANY-1&trade;<br />
+            <a href="mailto:company1.reignsound@gmail.com">company1.reignsound@email.com</a><br />
+            Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
+            Website: <a href="https://company1.vercel.app">company1.vercel.app</a>
+          </li>
+
+          <li>
+            Reignsound Global&trade;<br />
+            <a href="mailto:press.reignsound@gmail.com">press.reignsound@gmail.com</a><br />
+            Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
+          </li>
+
+          <li>
+            Reignsound Presents&trade;<br />
+            <a href="mailto:press.reignsound@gmail.com">press.reignsound@gmail.com</a><br />
+            Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
           </li>
         </ol>
 
