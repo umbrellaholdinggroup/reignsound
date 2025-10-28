@@ -1,8 +1,10 @@
 "use client";
 
-import useEmblaCarousel, { UseEmblaCarouselType } from "embla-carousel-react";
+import type { EmblaCarouselType } from "embla-carousel";
+import useEmblaCarousel from "embla-carousel-react";
 import { useEffect } from "react";
 import Image from "next/image";
+
 
 const logos = [
   "/subsidiaries/logo-1.png",
@@ -20,18 +22,20 @@ export default function SubsidiaryCarousel() {
 
   // Auto-scroll helper using scrollTo
   useEffect(() => {
-    const autoplay = (embla: UseEmblaCarouselType | null, intervalSec: number) => {
-      if (!embla) return;
+    const autoplay = (emblaInstance: EmblaCarouselType | undefined, intervalSec: number) => {
+      if (!emblaInstance) return;
 
       let rafId: number;
       let lastTime = performance.now();
 
       const loop = (time: number) => {
-        if (!embla) return;
+        if (!emblaInstance) return;
 
-        const api = embla as any; // bypass TS type error
+        const api: EmblaCarouselType = emblaInstance;
+
         if (time - lastTime >= intervalSec * 1000) {
-          const nextIndex = (api.selectedScrollSnap() + 1) % api.scrollSnapList().length;
+          const nextIndex =
+            (api.selectedScrollSnap() + 1) % api.scrollSnapList().length;
           api.scrollTo(nextIndex);
           lastTime = time;
         }
@@ -43,9 +47,12 @@ export default function SubsidiaryCarousel() {
       return () => cancelAnimationFrame(rafId);
     };
 
+
+
     const stop1 = autoplay(embla1, 2);
     const stop2 = autoplay(embla2, 3);
     const stop3 = autoplay(embla3, 1);
+
 
     return () => {
       stop1?.();
@@ -55,8 +62,9 @@ export default function SubsidiaryCarousel() {
   }, [embla1, embla2, embla3]);
 
 
+
   const renderRow = (
-    ref: React.RefObject<HTMLDivElement>,
+    ref: React.Ref<HTMLDivElement>,
     row: number,
     direction: "forward" | "reverse"
   ) => (
@@ -81,6 +89,8 @@ export default function SubsidiaryCarousel() {
       </div>
     </div>
   );
+
+
 
   return (
     <section className="subsidiary-carousel py-8">
