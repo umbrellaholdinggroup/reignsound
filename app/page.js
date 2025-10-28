@@ -66,7 +66,7 @@ export default function Page() {
           The "Agreement Authority List" recognizes authorities responsible for creating, approving, and enforcing Agreements.
         </p>
 
-        <h6 className="sub-sub-sub-subsection-title">Internal Authority</h6>
+        <h6 className="sub-sub-sub-subsection-title">Internal Authorities</h6>
         <p className="sub-sub-subsection-description">
           Internal authorities consist of Reignsound&trade; (the globally operating, public-facing, administrative and holding company) and its subsidiaries.
         </p>
@@ -99,9 +99,9 @@ export default function Page() {
           </li>
         </ol>
 
-        <h6 className="sub-sub-sub-subsection-title">U.S. Federal Authorities</h6>
+        <h6 className="sub-sub-sub-subsection-title">Federal Authorities</h6>
         <p className="sub-sub-subsection-description">
-          U.S. Federal Authorities oversee compliance with national laws and regulations affecting business operations, consumer protection, data privacy, and intellectual property.
+          Federal Authorities oversee compliance with national laws and regulations affecting business operations, consumer protection, data privacy, and intellectual property.
         </p>
 
         <ol style={{ paddingLeft: "2em" }}>
