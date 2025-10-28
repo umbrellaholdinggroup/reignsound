@@ -180,7 +180,7 @@ export default function Page() {
         The "User Responsibilities" section of the Agreement outlines what’s expected of users in terms of conduct, compliance, and lawful use of Reignsound&trade; resources.
       </p>
 
-      <h2>Disclaimers &amp; Protections</h2>
+      <h2>Disclaimers &amp; Protections (D&P)</h2>
       <div className="disclaimer-list" style={{ color: "#ccc" }}>
         <div>
           <strong>1. OWNERSHIP RIGHTS:</strong><br />
