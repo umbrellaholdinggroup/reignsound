@@ -295,6 +295,8 @@ export default function Page() {
         1. To ensure Reignsound&trade; Goods and Services comply with global regulations, the Company regularly reviews and updates its practices in accordance with changes in laws and industry standards.
       </p>
 
+      <hr style={{ borderTop: '5px dashed #1c1c1c' }} />
+
       <footer>© Reignsound&trade;</footer>
     </main>
   );
