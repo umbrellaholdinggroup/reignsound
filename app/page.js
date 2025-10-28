@@ -138,9 +138,9 @@ export default function Page() {
           </li>
         </ol>
 
-        <h6 className="sub-sub-sub-subsection-title">New York State Authorities</h6>
+        <h6 className="sub-sub-sub-subsection-title">State Authorities</h6>
         <p className="sub-sub-subsection-description">
-          New York State Authorities ensure compliance with state-specific regulations and laws that impact business operations, consumer rights, and data protection within New York.
+          New York State ("N.Y.S.") Authorities ensure compliance with state-specific regulations and laws that impact business operations, consumer rights, and data protection within New York.
         </p>
 
         <ol style={{ paddingLeft: "2em" }}>
