@@ -185,7 +185,7 @@ export default function Page() {
         <div>
           <strong>1. OWNERSHIP RIGHTS:</strong><br />
           All Goods or Services provided by Reignsound&trade; are produced and owned solely by Reignsound&trade;, or in collaboration with partners under proper agreements, rights, and licenses where applicable.
-        </div>
+        </div><br />
 
         <div>
           <strong>2. LEGAL:</strong><br />
@@ -194,7 +194,7 @@ export default function Page() {
             For any discrepancies or legal inquiries regarding Reignsound&trade; or any Reignsound&trade; subsidiaries, contact:<br />
             <a href="mailto:legal.reignsound@gmail.com" className="standalone-e-mail">legal.reignsound@gmail.com</a><br />
           </div>
-        </div>
+        </div><br />
 
         <div>
           <strong>3. FEEDBACK:</strong><br />
@@ -203,7 +203,7 @@ export default function Page() {
             Send feedback to:<br />
             <a href="mailto:feedback.reignsound@gmail.com" className="standalone-e-mail">feedback.reignsound@gmail.com</a>
           </div>
-        </div>
+        </div><br />
 
         <div>
           <strong>4. TRADEMARKS:</strong><br />
