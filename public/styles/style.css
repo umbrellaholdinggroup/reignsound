@@ -259,7 +259,7 @@ li a[href^="http"] { font-weight: bold; text-decoration: underline; color: var(-
 }
 
 .scroll-row a img {
-  height: 64px;
+  height: 65px;
   width: auto;
   opacity: 0.75;
   filter: grayscale(100%);
