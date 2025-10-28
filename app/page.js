@@ -289,6 +289,12 @@ export default function Page() {
         );
       })()}
 
+      <hr style={{ borderTop: '5px dashed #1c1c1c', margin: '20px 0' }} />
+
+      <p style={{ fontSize: '10px' }}>
+        1. To ensure Reignsound&trade; Goods and Services comply with global regulations, the Company regularly reviews and updates its practices in accordance with changes in laws and industry standards.
+      </p>
+
       <footer>© Reignsound&trade;</footer>
     </main>
   );
