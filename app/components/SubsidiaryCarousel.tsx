@@ -1,4 +1,5 @@
 "use client";
+
 import useEmblaCarousel, { UseEmblaCarouselType } from "embla-carousel-react";
 import { useEffect } from "react";
 import Image from "next/image";
@@ -24,13 +25,10 @@ export default function SubsidiaryCarousel() {
       let rafId: number;
 
       const loop = () => {
-        const currentSnap = embla.selectedScrollSnap;
-        if (currentSnap < embla.scrollSnapList().length - 1) {
-          embla.scrollTo(currentSnap + 1);
-        } else {
-          embla.scrollTo(0);
-        }
-        // scrollTo advances to the next slide
+        if (!embla) return;
+
+        // scrollBy fraction of the viewport each frame
+        embla.scrollBy(speed);
         rafId = requestAnimationFrame(loop);
       };
 
@@ -38,9 +36,9 @@ export default function SubsidiaryCarousel() {
       return () => cancelAnimationFrame(rafId);
     };
 
-    const stop1 = autoplay(embla1, 0.5); // adjust speed
-    const stop2 = autoplay(embla2, 0.25);
-    const stop3 = autoplay(embla3, 0.1);
+    const stop1 = autoplay(embla1, 0.5);   // medium speed
+    const stop2 = autoplay(embla2, 0.25);  // slower
+    const stop3 = autoplay(embla3, 1);     // faster
 
     return () => {
       stop1?.();
@@ -55,15 +53,11 @@ export default function SubsidiaryCarousel() {
     direction: "forward" | "reverse"
   ) => (
     <div
-      className={`embla overflow-hidden my-4 ${
-        direction === "reverse" ? "rotate-180" : ""
-      }`}
+      className={`embla overflow-hidden my-4 ${direction === "reverse" ? "rotate-180" : ""}`}
       ref={ref}
     >
       <div
-        className={`embla__container flex ${
-          direction === "reverse" ? "rotate-180" : ""
-        }`}
+        className={`embla__container flex ${direction === "reverse" ? "rotate-180" : ""}`}
       >
         {[...Array(12)].map((_, i) => (
           <div key={`${row}-${i}`} className="embla__slide flex-[0_0_auto] w-32 mx-4">
