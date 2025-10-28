@@ -29,10 +29,10 @@ export default function SubsidiaryCarousel() {
       const loop = (time: number) => {
         if (!embla) return;
 
+        const api = embla as any; // bypass TS type error
         if (time - lastTime >= intervalSec * 1000) {
-          const nextIndex =
-            (embla.selectedScrollSnap() + 1) % embla.scrollSnapList().length;
-          embla.scrollTo(nextIndex);
+          const nextIndex = (api.selectedScrollSnap() + 1) % api.scrollSnapList().length;
+          api.scrollTo(nextIndex);
           lastTime = time;
         }
 
@@ -43,9 +43,9 @@ export default function SubsidiaryCarousel() {
       return () => cancelAnimationFrame(rafId);
     };
 
-    const stop1 = autoplay(embla1, 2); // 2s per slide
-    const stop2 = autoplay(embla2, 3); // 3s per slide
-    const stop3 = autoplay(embla3, 1); // 1s per slide
+    const stop1 = autoplay(embla1, 2);
+    const stop2 = autoplay(embla2, 3);
+    const stop3 = autoplay(embla3, 1);
 
     return () => {
       stop1?.();
@@ -53,6 +53,7 @@ export default function SubsidiaryCarousel() {
       stop3?.();
     };
   }, [embla1, embla2, embla3]);
+
 
   const renderRow = (
     ref: React.RefObject<HTMLDivElement>,
