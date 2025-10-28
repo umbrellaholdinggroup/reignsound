@@ -161,7 +161,7 @@ export default function Page() {
 
       <h4>Agreement Purpose</h4>
       <p className="subsection-description">
-        The "Agreement Purpose" clarifies why the agreement exists and what it seeks to achieve.
+        The "Agreement Purpose" clarifies: (1) why the agreement exists and (2) what it seeks to achieve.
       </p>
       <p>
         1. This document governs all Reignsound&trade; business activities and ensures that all parties involved in said activities understand their rights and responsibilities when accessing or using Reignsound&trade; Goods or Services.
