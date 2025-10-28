@@ -153,7 +153,7 @@ ol:not(.disclaimer-list) > li {
   background-color: #111;
   border-left: 4px solid var(--color-accent);
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   border-radius: 6px;
   line-height: 1.6;
 }
