@@ -18,17 +18,24 @@ export default function SubsidiaryCarousel() {
   const [embla2Ref, embla2] = useEmblaCarousel({ loop: true });
   const [embla3Ref, embla3] = useEmblaCarousel({ loop: true });
 
-  // Auto-scroll with speed control
+  // Auto-scroll helper using scrollTo
   useEffect(() => {
-    const autoplay = (embla: UseEmblaCarouselType | null, speed: number) => {
+    const autoplay = (embla: UseEmblaCarouselType | null, intervalSec: number) => {
       if (!embla) return;
-      let rafId: number;
 
-      const loop = () => {
+      let rafId: number;
+      let lastTime = performance.now();
+
+      const loop = (time: number) => {
         if (!embla) return;
 
-        // scrollBy fraction of the viewport each frame
-        embla.scrollBy(speed);
+        if (time - lastTime >= intervalSec * 1000) {
+          const nextIndex =
+            (embla.selectedScrollSnap() + 1) % embla.scrollSnapList().length;
+          embla.scrollTo(nextIndex);
+          lastTime = time;
+        }
+
         rafId = requestAnimationFrame(loop);
       };
 
@@ -36,9 +43,9 @@ export default function SubsidiaryCarousel() {
       return () => cancelAnimationFrame(rafId);
     };
 
-    const stop1 = autoplay(embla1, 0.5);   // medium speed
-    const stop2 = autoplay(embla2, 0.25);  // slower
-    const stop3 = autoplay(embla3, 1);     // faster
+    const stop1 = autoplay(embla1, 2); // 2s per slide
+    const stop2 = autoplay(embla2, 3); // 3s per slide
+    const stop3 = autoplay(embla3, 1); // 1s per slide
 
     return () => {
       stop1?.();
@@ -56,9 +63,7 @@ export default function SubsidiaryCarousel() {
       className={`embla overflow-hidden my-4 ${direction === "reverse" ? "rotate-180" : ""}`}
       ref={ref}
     >
-      <div
-        className={`embla__container flex ${direction === "reverse" ? "rotate-180" : ""}`}
-      >
+      <div className={`embla__container flex ${direction === "reverse" ? "rotate-180" : ""}`}>
         {[...Array(12)].map((_, i) => (
           <div key={`${row}-${i}`} className="embla__slide flex-[0_0_auto] w-32 mx-4">
             <a href="#" target="_blank" rel="noopener noreferrer">
