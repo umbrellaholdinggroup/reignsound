@@ -73,27 +73,27 @@ export default function Page() {
 
         <ol style={{ paddingLeft: "2em" }}>
           <li>
-            Reignsound&trade;<br />
+            <span style={{ color: "#fff" }}>Reignsound&trade;</span><br />
             <a href="mailto:reignsound@email.com">reignsound@email.com</a><br />
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
             Website: <a href="https://reignsound.vercel.app">reignsound.vercel.app</a>
           </li>
 
           <li>
-            COMPANY-1&trade;<br />
+            <span style={{ color: "#fff" }}>COMPANY-1&trade;</span><br />
             <a href="mailto:company1.reignsound@gmail.com">company1.reignsound@email.com</a><br />
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
             Website: <a href="https://company1.vercel.app">company1.vercel.app</a>
           </li>
 
           <li>
-            Reignsound Global&trade;<br />
+            <span style={{ color: "#fff" }}>Reignsound Global&trade;</span><br />
             <a href="mailto:press.reignsound@gmail.com">press.reignsound@gmail.com</a><br />
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
           </li>
 
           <li>
-            Reignsound Presents&trade;<br />
+            <span style={{ color: "#fff" }}>Reignsound Presents&trade;</span><br />
             <a href="mailto:press.reignsound@gmail.com">press.reignsound@gmail.com</a><br />
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
           </li>
@@ -106,18 +106,18 @@ export default function Page() {
 
         <ol style={{ paddingLeft: "2em" }}>
           <li>
-            Consumer Financial Protection Bureau (C.F.P.B.)<br />
-            E-mail: <a href="mailto:cfpb-hr@cfpb.gov">cfpb-hr@cfpb.gov</a><br />
+            <span style={{ color: "#fff" }}>Consumer Financial Protection Bureau (C.F.P.B.)</span><br />
+            <a href="mailto:cfpb-hr@cfpb.gov">cfpb-hr@cfpb.gov</a><br />
             Phone: <a href="tel:+18554112372" className="phone-link">+1 855 411 2372</a><br />
             Website: <a href="https://www.consumerfinance.gov/about-us/contact-us/">consumerfinance.gov</a>
           </li>
           <li>
-            Department of Commerce (D.O.C.)<br />
+            <span style={{ color: "#fff" }}>Department of Commerce (D.O.C.)</span><br />
             Phone: <a href="tel:+12024822000" className="phone-link">+1 202 482 2000</a><br />
             Website: <a href="https://learn.commerce.gov/contact-us.html">learn.commerce.gov</a>
           </li>
           <li>
-            Federal Communications Commission (F.C.C.)<br />
+            <span style={{ color: "#fff" }}>Federal Communications Commission (F.C.C.)</span><br />
             Phone: <a href="tel:+18882255322" className="phone-link">+1 888 225 5322</a><br />
             Website: <a href="https://www.fcc.gov/about/contact">fcc.gov</a>
           </li>
@@ -127,12 +127,12 @@ export default function Page() {
             Website: <a href="https://www.ftc.gov/about-ftc/contact">ftc.gov</a>
           </li>
           <li>
-            United States Copyright Office<br />
+            <span style={{ color: "#fff" }}>United States Copyright Office</span><br />
             Phone: <a href="tel:+12027073000" className="phone-link">+1 202 707 3000</a><br />
             Website: <a href="https://www.copyright.gov/help/">copyright.gov</a>
           </li>
           <li>
-            United States Patent &amp; Trademark Office (U.S.P.T.O.)<br />
+            <span style={{ color: "#fff" }}>United States Patent &amp; Trademark Office (U.S.P.T.O.)</span><br />
             Phone: <a href="tel:+15712721000" className="phone-link">+1 571 272 1000</a><br />
             Website: <a href="https://www.uspto.gov/about-us/contact-us">uspto.gov</a>
           </li>
@@ -145,14 +145,14 @@ export default function Page() {
 
         <ol style={{ paddingLeft: "2em" }}>
           <li>
-            Consumer Protection Division — N.Y.S. Attorney General<br />
-            E-mail: <a href="mailto:consumer@ag.ny.gov">consumer@ag.ny.gov</a><br />
+            <span style={{ color: "#fff" }}>Consumer Protection Division — N.Y.S. Attorney General</span><br />
+            <a href="mailto:consumer@ag.ny.gov">consumer@ag.ny.gov</a><br />
             Phone: <a href="tel:18007717755">+1 800 771 7755</a><br />
             Website: <a href="https://ag.ny.gov/consumer" target="_blank">ag.ny.gov</a>
           </li>
           <li>
-            New York State Department of State (N.Y.S.D.O.S.)<br />
-            E-mail: <a href="mailto:consumer@dos.ny.gov">consumer@dos.ny.gov</a><br />
+            <span style={{ color: "#fff" }}>New York State Department of State (N.Y.S.D.O.S.)</span><br />
+            <a href="mailto:consumer@dos.ny.gov">consumer@dos.ny.gov</a><br />
             Phone: <a href="tel:18006971220">+1 800 697 1220</a><br />
             Website: <a href="https://dos.ny.gov/consumer-protection" target="_blank">dos.ny.gov</a>
           </li>
