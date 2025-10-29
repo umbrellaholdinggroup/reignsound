@@ -81,7 +81,7 @@ export default function Page() {
 
           <li>
             <span style={{ color: "#fff" }}>COMPANY-1&trade;</span><br />
-            <a href="mailto:company1.reignsound@gmail.com">company1.reignsound@email.com</a><br />
+            <a href="mailto:company1.reignsound@gmail.com">company1.uhgc@email.com</a><br />
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
             Website: <a href="https://company1.vercel.app">company1.vercel.app</a>
           </li>
