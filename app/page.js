@@ -36,11 +36,11 @@ export default function Page() {
       <h1 className="brand-name">Reignsound&trade;</h1>
 
       <p className="brand-description">
-        Reignsound&trade; is a global, public-facing administrative and holding company organized under New York ("N.Y.") law in the United States of America ("U.S.A.").
+        Reignsound&trade; is a global, public-facing administrative and holding company<sup>1</sup> organized under New York ("N.Y.") law in the United States of America ("U.S.A.").
       </p>
 
       <p className="document-description">
-        This document is the official digital agreement ("Agreement") between Reignsound&trade; ("Company") and all users accessing or interacting with the Company's platforms, products, and/or services &mdash; collectively, the Company's "Goods and Services," each, a "Good" or "Service" &mdash; including this website (https://reignsound.vercel.app).
+        This document is the official digital agreement ("Agreement") between Reignsound&trade; ("Company") and all users accessing or interacting with the platforms, products, and/or services of the Company's subsidiaries &mdash; collectively, the Company's "Goods and Services," each, a "Good" or "Service" &mdash; including this website (https://reignsound.vercel.app).
       </p>
 
       <h2 className="section-title">Terms and Conditions (T&amp;C)</h2>
@@ -68,7 +68,7 @@ export default function Page() {
 
         <h6 className="sub-sub-sub-subsection-title">Internal Authorities</h6>
         <p className="sub-sub-subsection-description">
-          Internal authorities consist of Reignsound&trade; (the globally operating, public-facing, administrative and holding company) and its subsidiaries.
+          Internal authorities consist of Reignsound&trade; and its subsidiaries.
         </p>
 
         <ol style={{ paddingLeft: "2em" }}>
@@ -189,7 +189,7 @@ export default function Page() {
 
         <div>
           <strong>2. LEGAL:</strong><br />
-          Reignsound&trade; takes precautionary steps<sup>1</sup> to ensure Goods and Services are in compliance with global regulations.
+          Reignsound&trade; takes precautionary steps<sup>2</sup> to ensure Goods and Services are in compliance with global regulations.
           <div className="sub-sub-subsection-description">
             For any discrepancies or legal inquiries regarding Reignsound&trade; or any Reignsound&trade; subsidiaries, contact:<br />
             <a href="mailto:legal.uhgc@gmail.com" className="standalone-e-mail">legal.uhgc@gmail.com</a><br />
@@ -292,7 +292,11 @@ export default function Page() {
       <hr style={{ borderTop: '5px dashed #1c1c1c', margin: '20px 0' }} />
 
       <p style={{ fontSize: '10px' }}>
-        1. To ensure Reignsound&trade; Goods and Services comply with global regulations, the Company regularly reviews and updates its practices in accordance with changes in laws and industry standards.
+        1. Reignsound&trade; is a holding company &mdash; a type of business entity that owns or manages other companies, rather than producing goods or services itself.
+      </p>
+
+      <p style={{ fontSize: '10px' }}>
+        2. To ensure the Goods and Services of the Company's subsidiary brands comply with global regulations, the Company regularly reviews and updates its practices in accordance with changes in laws and industry standards.
       </p>
 
       <hr style={{ borderTop: '5px dashed #1c1c1c' }} />
