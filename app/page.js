@@ -192,7 +192,7 @@ export default function Page() {
           Reignsound&trade; takes precautionary steps<sup>1</sup> to ensure Goods and Services are in compliance with global regulations.
           <div className="sub-sub-subsection-description">
             For any discrepancies or legal inquiries regarding Reignsound&trade; or any Reignsound&trade; subsidiaries, contact:<br />
-            <a href="mailto:legal.reignsound@gmail.com" className="standalone-e-mail">legal.reignsound@gmail.com</a><br />
+            <a href="mailto:legal.uhgc@gmail.com" className="standalone-e-mail">legal.uhgc@gmail.com</a><br />
           </div>
         </div><br />
 
@@ -201,7 +201,7 @@ export default function Page() {
           Reignsound&trade; values your input &mdash; let us know what you think &mdash; it helps us improve our Goods and Services.
           <div className="sub-sub-subsection-description">
             Send feedback to:<br />
-            <a href="mailto:feedback.reignsound@gmail.com" className="standalone-e-mail">feedback.reignsound@gmail.com</a>
+            <a href="mailto:feedback.uhgc@gmail.com" className="standalone-e-mail">feedback.uhgc@gmail.com</a>
           </div>
         </div><br />
 
