@@ -218,34 +218,44 @@ export default function Page() {
       </p>
 
       {(() => {
-        const partners = [
-          { logo: "/partners/logo-1.png", url: "https://partner1.com" },
-          { logo: "/partners/logo-2.png", url: "https://partner2.com" },
-          { logo: "/partners/logo-3.png", url: "https://partner3.com" },
-          { logo: "/partners/logo-4.png", url: "https://partner4.com" },
-          { logo: "/partners/logo-5.png", url: "https://partner5.com" },
-          { logo: "/partners/logo-6.png", url: "https://partner6.com" },
-        ];
+        // Generate up to 40 partner logos automatically
+        const totalLogos = 40;
+        const partners = Array.from({ length: totalLogos }, (_, i) => ({
+          logo: `/partners/logo-${i + 1}.png`,
+          url: "#",
+        }));
 
-        const rows = ["scroll-row-1", "scroll-row-2", "scroll-row-3"];
+        const rows = [0, 1, 2]; // Three rows
 
         return (
           <div className="partner-carousel">
-            {rows.map((rowClass, rowIndex) => (
-              <div key={rowIndex} className={`scroll-row ${rowClass}`}>
-                {partners.map((item, i) => (
-                  <a key={i} href={item.url} target="_blank" rel="noopener noreferrer">
-                    <Image
-                      src={item.logo}
-                      alt={`Partner ${i + 1}`}
-                      width={150}
-                      height={150}
-                      style={{ objectFit: "contain" }}
-                    />
-                  </a>
-                ))}
-              </div>
-            ))}
+            {rows.map((rowIndex) => {
+              // Offset starting logo for each row
+              const offset = Math.floor((rowIndex * totalLogos) / 3);
+              const rowLogos = [
+                ...partners.slice(offset),
+                ...partners.slice(0, offset),
+              ]; // Wrap-around order
+
+              // Duplicate once for seamless loop
+              const duplicated = [...rowLogos, ...rowLogos];
+
+              return (
+                <div key={rowIndex} className={`scroll-row scroll-row-${rowIndex + 1}`}>
+                  {duplicated.map((item, i) => (
+                    <a key={i} href={item.url} target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src={item.logo}
+                        alt={`Partner ${i + 1}`}
+                        width={150}
+                        height={150}
+                        style={{ objectFit: "contain" }}
+                      />
+                    </a>
+                  ))}
+                </div>
+              );
+            })}
           </div>
         );
       })()}
@@ -253,41 +263,48 @@ export default function Page() {
       {/* Reignsound™ Subsidiaries Section */}
       <h2>Reignsound™ Subsidiaries</h2>
       <p className="section-description">
-        Reignsound™ subsidiaries represent our extended family of brands &mdash; operating across creative, administrative, and strategic sectors worldwide.
+        Reignsound™ subsidiaries represent our extended family of brands — operating across creative, administrative, and strategic sectors worldwide.
       </p>
 
       {(() => {
-        const subsidiaries = [
-          { logo: "/subsidiaries/logo-1.png", url: "https://youtube.com/@reignsoundglobal" },
-          { logo: "/subsidiaries/logo-2.png", url: "https://reignsound.github.io" },
-          { logo: "/subsidiaries/logo-3.png", url: "https://brand3.com" },
-          { logo: "/subsidiaries/logo-4.png", url: "https://brand4.com" },
-          { logo: "/subsidiaries/logo-5.png", url: "https://brand5.com" },
-          { logo: "/subsidiaries/logo-6.png", url: "https://brand6.com" },
-        ];
+        const totalLogos = 40;
+        const subsidiaries = Array.from({ length: totalLogos }, (_, i) => ({
+          logo: `/subsidiaries/logo-${i + 1}.png`,
+          url: "#",
+        }));
 
-        const rows = ["scroll-row-1", "scroll-row-2", "scroll-row-3"];
+        const rows = [0, 1, 2];
 
         return (
           <div className="subsidiary-carousel">
-            {rows.map((rowClass, rowIndex) => (
-              <div key={rowIndex} className={`scroll-row ${rowClass}`}>
-                {subsidiaries.map((item, i) => (
-                  <a key={i} href={item.url} target="_blank" rel="noopener noreferrer">
-                    <Image
-                      src={item.logo}
-                      alt={`Subsidiary ${i + 1}`}
-                      width={150}
-                      height={150}
-                      style={{ objectFit: "contain" }}
-                    />
-                  </a>
-                ))}
-              </div>
-            ))}
+            {rows.map((rowIndex) => {
+              const offset = Math.floor((rowIndex * totalLogos) / 3);
+              const rowLogos = [
+                ...subsidiaries.slice(offset),
+                ...subsidiaries.slice(0, offset),
+              ];
+              const duplicated = [...rowLogos, ...rowLogos];
+
+              return (
+                <div key={rowIndex} className={`scroll-row scroll-row-${rowIndex + 1}`}>
+                  {duplicated.map((item, i) => (
+                    <a key={i} href={item.url} target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src={item.logo}
+                        alt={`Subsidiary ${i + 1}`}
+                        width={150}
+                        height={150}
+                        style={{ objectFit: "contain" }}
+                      />
+                    </a>
+                  ))}
+                </div>
+              );
+            })}
           </div>
         );
       })()}
+
 
       <hr style={{ borderTop: '5px dashed #1c1c1c', margin: '20px 0' }} />
 

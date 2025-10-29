@@ -241,22 +241,22 @@ li a[href^="http"] { font-weight: bold; text-decoration: underline; color: var(-
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  overflow-x: hidden;
-  overflow-y: visible;
-  padding: 5px 0;
+  overflow: hidden;
   width: 100%;
   position: relative;
 }
 
 .scroll-row {
   display: flex;
-  gap: 3rem;
   width: max-content;
+  gap: 3rem;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .scroll-row a {
-  display: inline-block;
   flex-shrink: 0;
+  display: inline-block;
 }
 
 .scroll-row a img {
@@ -273,7 +273,7 @@ li a[href^="http"] { font-weight: bold; text-decoration: underline; color: var(-
   filter: grayscale(0%);
 }
 
-/* Scroll Animations */
+/* Infinite Seamless Scrolling */
 @keyframes scroll-left {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -282,9 +282,18 @@ li a[href^="http"] { font-weight: bold; text-decoration: underline; color: var(-
   0% { transform: translateX(-50%); }
   100% { transform: translateX(0); }
 }
-.scroll-row-1 { animation: scroll-left 50s linear infinite; }
-.scroll-row-2 { animation: scroll-right 70s linear infinite; opacity: 0.85; }
-.scroll-row-3 { animation: scroll-left 90s linear infinite; opacity: 0.7; }
+
+.scroll-row-1 {
+  animation: scroll-left 180s linear infinite;
+}
+.scroll-row-2 {
+  animation: scroll-right 200s linear infinite;
+  opacity: 0.85;
+}
+.scroll-row-3 {
+  animation: scroll-left 220s linear infinite;
+  opacity: 0.7;
+}
 
 @media (max-width: 600px) {
   .scroll-row a img { height: 36px; }
