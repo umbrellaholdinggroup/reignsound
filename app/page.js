@@ -4,30 +4,30 @@ import "../public/styles/style.css";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Reignsound™: Administrative & Holding Company - Operate Worldwide",
+  title: "Reignsound",
   description:
-    "Reignsound™ is a New York-based administrative and holding company operating globally. Discover our services, subsidiaries, and official filings.",
+    "Reignsound™ is a global, public-facing administrative and holding company.",
 };
 
 export default function Page() {
   return (
     <main className="legal-container">
       <head>
-        <title>Reignsound™: Administrative & Holding Company - Operate Worldwide</title>
+        <title>Reignsound</title>
         <meta
           name="description"
-          content="Reignsound™ is a New York-based administrative and holding company operating globally. Discover our services, subsidiaries, and official filings."
+          content="Reignsound™ is a global, public-facing administrative and holding company."
         />
         <meta name="author" content="Reignsound™" />
 
         {/* Open Graph for social sharing */}
         <meta
           property="og:title"
-          content="Reignsound™: Administrative & Holding Company - Operate Worldwide"
+          content="Reignsound"
         />
         <meta
           property="og:description"
-          content="Reignsound™ is a New York-based administrative and holding company operating globally. Discover our services, subsidiaries, and official filings."
+          content="Reignsound™ is a global, public-facing administrative and holding company."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://reignsound.vercel.app" />
