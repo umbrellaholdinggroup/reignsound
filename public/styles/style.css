@@ -146,7 +146,7 @@ ol li a, ul li a { color: inherit; text-decoration: underline; }
 ol:not(.disclaimer-list) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   padding-left: 0;
 }
 ol:not(.disclaimer-list) > li {
@@ -155,7 +155,7 @@ ol:not(.disclaimer-list) > li {
   padding: 1rem;
   margin-bottom: 0rem;
   border-radius: 6px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 ol:not(.disclaimer-list) li li {
   border-left: none;
