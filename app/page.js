@@ -36,11 +36,11 @@ export default function Page() {
       <h1 className="brand-name">Reignsound&trade;</h1>
 
       <p className="brand-description">
-        Reignsound&trade; is a global, public-facing administrative and holding company<sup>1</sup> organized under New York ("N.Y.") law in the United States of America ("U.S.A.").
+        Reignsound&trade; is a global, public-facing administrative and holding company<sup>1</sup> organized in the United States of America ("U.S.A.").
       </p>
 
       <p className="document-description">
-        This document is the official digital agreement ("Agreement") between Reignsound&trade; ("Company") and all users accessing or interacting with the platforms, products, and/or services of the Company's subsidiaries &mdash; collectively, the Company's "Goods and Services," each, a "Good" or "Service" &mdash; including this website (https://reignsound.vercel.app).
+        This web document serves as the official digital agreement ("Agreement") between Reignsound&trade; ("Company") and all users accessing or interacting with the platforms, products, and/or services of the Company's subsidiaries &mdash; collectively, the Company's "Goods and Services," each, a "Good" or "Service" &mdash; including this website (https://reignsound.vercel.app).
       </p>
 
       <h2 className="section-title">Terms and Conditions (T&amp;C)</h2>
