@@ -47,7 +47,7 @@ export default function Page() {
         <meta property="og:url" content="https://reignsound.vercel.app" />
       </head>
 
-      <h1 className="brand-name">Reignsound&trade;</h1>
+      <h1 className="brand-name">Reignsound<sup>&trade;</sup></h1>
 
       <p className="brand-description">
         Reignsound&trade; is a global, public-facing administrative and holding company<sup>1</sup> organized in the United States of America ("U.S.A.").
