@@ -47,7 +47,7 @@ export default function Page() {
         <meta property="og:url" content="https://reignsound.vercel.app" />
       </head>
 
-      <h1 className="brand-name">Reignsound<sup>&trade;</sup></h1>
+      <h1 className="brand-name">Reignsound<sup style={{ fontFamily: "IBM Plex Sans Condensed" }}>&trade;</sup></h1>
 
       <p className="brand-description">
         Reignsound&trade; is a global, public-facing administrative and holding company<sup>1</sup> organized in the United States of America ("U.S.A.").
@@ -87,10 +87,9 @@ export default function Page() {
 
         <ol style={{ paddingLeft: "2em" }}>
           <li>
-            <span style={{ color: "#fff" }}>Reignsound&trade;</span><br />
-            <a href="mailto:reignsound@email.com">reignsound@email.com</a><br />
+            <span style={{ color: "#fff" }}>ATAAH KING&trade;</span><br />
+            <a href="mailto:press.reignsound@gmail.com">business.ataahking@gmail.com</a><br />
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
-            Website: <a href="https://reignsound.vercel.app">reignsound.vercel.app</a>
           </li>
 
           <li>
@@ -99,6 +98,13 @@ export default function Page() {
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
             Website: <a href="https://company1.vercel.app">company1.vercel.app</a>
           </li>
+
+          <li>
+            <span style={{ color: "#fff" }}>Reignsound&trade;</span><br />
+            <a href="mailto:reignsound@email.com">reignsound@email.com</a><br />
+            Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
+            Website: <a href="https://reignsound.vercel.app">reignsound.vercel.app</a>
+          </li>          
 
           <li>
             <span style={{ color: "#fff" }}>Reignsound Global&trade;</span><br />
@@ -110,7 +116,7 @@ export default function Page() {
             <span style={{ color: "#fff" }}>Reignsound Presents&trade;</span><br />
             <a href="mailto:press.reignsound@gmail.com">press.reignsound@gmail.com</a><br />
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
-          </li>
+          </li>  
         </ol>
 
         <h6 className="sub-sub-sub-subsection-title">Federal Authorities</h6>
