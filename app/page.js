@@ -11,6 +11,83 @@ export const metadata = {
     "Reignsound™ is a global, public-facing administrative and holding company.",
 };
 
+// --- Subsidiary List Setup ---
+
+// Your real subsidiaries
+const subsidiariesList = [
+  "ATAAH KING",
+  "Reignsound Studios",
+  "Reignsound Media",
+  "Reignsound Apparel",
+  "Reignsound Presents",
+  "Reignsound Global",
+  "COMPANY-1",
+  "FAVORITE RAPPER inc.",
+  "Reignsound Records",
+  "UMBRELLA Holding Group Company",
+  "ReignsoundXL",
+  "AD-1",
+  "BRAND-1",
+  "CHANNEL-1",
+  "PAGE-1",
+  "TEAM-1",
+  "PARTNER-1",
+  "SOURCE-1",
+  "VENTURE-1",
+  "STATION-1",
+  "STORE-1",
+  "STUDIO-1",
+  "Reignsound Affiliates",
+  "Mainstream Label Network",
+  "Reignsound Holdings",
+  "Reignsound Analytics",
+  "Reignsound Board",
+  "Public Production Company",
+  "Universal Brodcasting Network",
+  "PRESS-1",
+  "A1 Music Group",
+  "ADMIN-1",
+  "Sound and Friends",
+  "Top Notch Records",
+  "Reignsound Finance",
+  "Reignsound Innovations",
+  "Reignsound Ventures",
+  "Reignsound News",
+  "ATAAH KING News",
+  "Reignsound Philanthropies",
+  "Reignsound Ads",
+  "Merch by Reignsound",
+  "Reignsound Commercial",
+  "Reignsound Press",
+  "Reignsound Productions",
+  "Reignsound Publishing",
+  "Reignsound Recreational Center",
+  "Reignsound Gear",
+  "Reignsound Tech",
+  "Soundwork (Series) by Reignsound",
+  "SQUARE-1",
+  "Reignsound Headquarters",
+  "BIG PICTURE",
+  "Trap Handbook",
+  "Numbers LLC",
+  "NOBRANDJUSTGOD",
+  "The FIRM Group",
+  "FIRM Capital & Marketing"
+];
+
+// Always ensure 40 items total, alphabetically sorted
+function getSubsidiaryList(list) {
+  const sorted = [...list].sort((a, b) => a.localeCompare(b));
+  const total = 40;
+  const padded = [...sorted];
+
+  // Fill remaining slots with placeholders
+  for (let i = sorted.length + 1; i <= total; i++) {
+    padded.push(`Company ${i}`);
+  }
+  return padded.slice(0, total);
+}
+
 // Helper: only include logos that actually exist in /public/[dir]
 function getExistingLogos(dir, total) {
   const logos = [];
@@ -353,6 +430,65 @@ export default function Page() {
           </div>
         );
       })()}
+
+      <hr style={{ borderTop: '5px dashed #1c1c1c', margin: '20px 0' }} />
+
+      {/* Reignsound™ Subsidiary Directory */}
+      <section className="subsidiary-directory" style={{ marginTop: "0rem", paddingTop: "0rem" }}>
+        <h2 style={{ textAlign: "center", marginBottom: "3rem" }}>
+          Reignsound
+          <sup style={{ fontFamily: "IBM Plex Sans Condensed" }}>&trade;</sup> Subsidiary Directory
+        </h2>
+
+        {(() => {
+          let subsidiaries = getSubsidiaryList(subsidiariesList)
+            .sort((a, b) => a.localeCompare(b)); // alphabetize
+
+          // If fewer than 40, pad with "Company #"
+          const MAX_COUNT = 40;
+          if (subsidiaries.length < MAX_COUNT) {
+            for (let i = subsidiaries.length; i < MAX_COUNT; i++) {
+              subsidiaries.push(`Company ${i + 1}`);
+            }
+          }
+
+          const total = subsidiaries.length;
+          const remainder = total % 3;
+          const needsCentering = remainder === 1; // only 1 item in last row
+
+          return (
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(3, 1fr)",
+                gap: "1rem",
+                textAlign: "center",
+                color: "#ccc",
+              }}
+            >
+              {subsidiaries.map((name, i) => (
+                <div
+                  key={i}
+                  style={{
+                    backgroundColor: "#111",
+                    borderRadius: "12px",
+                    padding: "0.75rem",
+                    boxShadow: "0 0 5px rgba(255,255,255,0.05)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    minHeight: "60px",
+                    gridColumn:
+                      needsCentering && i === total - 1 ? "2 / span 1" : "auto", // center last if it's alone
+                  }}
+                >
+                  {name}
+                </div>
+              ))}
+            </div>
+          );
+        })()}
+      </section>
 
       <hr style={{ borderTop: '5px dashed #1c1c1c', margin: '20px 0' }} />
 
