@@ -2,12 +2,29 @@
 
 import "../public/styles/style.css";
 import Image from "next/image";
+import fs from "fs";
+import path from "path";
 
 export const metadata = {
   title: "Reignsound",
   description:
     "Reignsound™ is a global, public-facing administrative and holding company.",
 };
+
+// Helper: only include logos that actually exist in /public/[dir]
+function getExistingLogos(dir, total) {
+  const logos = [];
+  for (let i = 1; i <= total; i++) {
+    const filePath = path.join(process.cwd(), "public", dir, `logo-${i}.png`);
+    if (fs.existsSync(filePath)) {
+      logos.push({
+        logo: `/${dir}/logo-${i}.png`,
+        url: "#",
+      });
+    }
+  }
+  return logos;
+}
 
 export default function Page() {
   return (
@@ -21,10 +38,7 @@ export default function Page() {
         <meta name="author" content="Reignsound™" />
 
         {/* Open Graph for social sharing */}
-        <meta
-          property="og:title"
-          content="Reignsound"
-        />
+        <meta property="og:title" content="Reignsound" />
         <meta
           property="og:description"
           content="Reignsound™ is a global, public-facing administrative and holding company."
@@ -218,26 +232,18 @@ export default function Page() {
       </p>
 
       {(() => {
-        // Generate up to 40 partner logos automatically
-        const totalLogos = 40;
-        const partners = Array.from({ length: totalLogos }, (_, i) => ({
-          logo: `/partners/logo-${i + 1}.png`,
-          url: "#",
-        }));
+        const partners = getExistingLogos("partners", 40);
+        if (partners.length === 0) return null;
 
-        const rows = [0, 1, 2]; // Three rows
-
+        const rows = [0, 1, 2];
         return (
           <div className="partner-carousel">
             {rows.map((rowIndex) => {
-              // Offset starting logo for each row
-              const offset = Math.floor((rowIndex * totalLogos) / 3);
+              const offset = Math.floor((rowIndex * partners.length) / 3);
               const rowLogos = [
                 ...partners.slice(offset),
                 ...partners.slice(0, offset),
-              ]; // Wrap-around order
-
-              // Duplicate once for seamless loop
+              ];
               const duplicated = [...rowLogos, ...rowLogos];
 
               return (
@@ -267,18 +273,14 @@ export default function Page() {
       </p>
 
       {(() => {
-        const totalLogos = 40;
-        const sponsors = Array.from({ length: totalLogos }, (_, i) => ({
-          logo: `/sponsors/logo-${i + 1}.png`,
-          url: "#",
-        }));
+        const sponsors = getExistingLogos("sponsors", 40);
+        if (sponsors.length === 0) return null;
 
         const rows = [0, 1, 2];
-
         return (
           <div className="sponsor-carousel">
             {rows.map((rowIndex) => {
-              const offset = Math.floor((rowIndex * totalLogos) / 3);
+              const offset = Math.floor((rowIndex * sponsors.length) / 3);
               const rowLogos = [
                 ...sponsors.slice(offset),
                 ...sponsors.slice(0, offset),
@@ -312,18 +314,14 @@ export default function Page() {
       </p>
 
       {(() => {
-        const totalLogos = 40;
-        const subsidiaries = Array.from({ length: totalLogos }, (_, i) => ({
-          logo: `/subsidiaries/logo-${i + 1}.png`,
-          url: "#",
-        }));
+        const subsidiaries = getExistingLogos("subsidiaries", 40);
+        if (subsidiaries.length === 0) return null;
 
         const rows = [0, 1, 2];
-
         return (
           <div className="subsidiary-carousel">
             {rows.map((rowIndex) => {
-              const offset = Math.floor((rowIndex * totalLogos) / 3);
+              const offset = Math.floor((rowIndex * subsidiaries.length) / 3);
               const rowLogos = [
                 ...subsidiaries.slice(offset),
                 ...subsidiaries.slice(0, offset),
@@ -349,7 +347,6 @@ export default function Page() {
           </div>
         );
       })()}
-
 
       <hr style={{ borderTop: '5px dashed #1c1c1c', margin: '20px 0' }} />
 
