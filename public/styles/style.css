@@ -226,7 +226,7 @@ li a[href^="http"] { font-weight: bold; text-decoration: underline; color: var(-
   color: var(--color-text);
 }
 
-.partners-section .section-description,
+.partners-section .section-description, .sponsors-section .section-description,
 .subsidiaries-section .section-description {
   color: var(--color-accent);
   font-size: 0.95rem;
@@ -251,6 +251,7 @@ li a[href^="http"] { font-weight: bold; text-decoration: underline; color: var(-
   gap: 3rem;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  padding-top: 0.2rem;
 }
 
 .scroll-row a {
