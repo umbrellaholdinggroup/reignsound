@@ -237,7 +237,7 @@ li a[href^="http"] { font-weight: bold; text-decoration: underline; color: var(-
 }
 
 /* Carousel */
-.partner-carousel, .subsidiary-carousel {
+.partner-carousel, .sponsor-carousel, .subsidiary-carousel {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;

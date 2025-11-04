@@ -260,6 +260,51 @@ export default function Page() {
         );
       })()}
 
+      {/* Reignsound™ Sponsors Section */}
+      <h2>Reignsound™ Sponsors</h2>
+      <p className="section-description">
+        Reignsound™ sponsors are organizations and entities that provide financial or resource support to Reignsound™ and its initiatives.
+      </p>
+
+      {(() => {
+        const totalLogos = 40;
+        const sponsors = Array.from({ length: totalLogos }, (_, i) => ({
+          logo: `/sponsors/logo-${i + 1}.png`,
+          url: "#",
+        }));
+
+        const rows = [0, 1, 2];
+
+        return (
+          <div className="sponsor-carousel">
+            {rows.map((rowIndex) => {
+              const offset = Math.floor((rowIndex * totalLogos) / 3);
+              const rowLogos = [
+                ...sponsors.slice(offset),
+                ...sponsors.slice(0, offset),
+              ];
+              const duplicated = [...rowLogos, ...rowLogos];
+
+              return (
+                <div key={rowIndex} className={`scroll-row scroll-row-${rowIndex + 1}`}>
+                  {duplicated.map((item, i) => (
+                    <a key={i} href={item.url} target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src={item.logo}
+                        alt={`Sponsor ${i + 1}`}
+                        width={150}
+                        height={150}
+                        style={{ objectFit: "contain" }}
+                      />
+                    </a>
+                  ))}
+                </div>
+              );
+            })}
+          </div>
+        );
+      })()}
+
       {/* Reignsound™ Subsidiaries Section */}
       <h2>Reignsound™ Subsidiaries</h2>
       <p className="section-description">
