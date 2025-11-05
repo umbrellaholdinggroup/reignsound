@@ -167,19 +167,7 @@ export default function Page() {
             <a href="mailto:reignsound@email.com">reignsound@email.com</a><br />
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
             Website: <a href="https://reignsound.vercel.app">reignsound.vercel.app</a>
-          </li>          
-
-          <li>
-            <span style={{ color: "#fff" }}>Reignsound Global&trade;</span><br />
-            <a href="mailto:press.reignsound@gmail.com">press.reignsound@gmail.com</a><br />
-            Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
-          </li>
-
-          <li>
-            <span style={{ color: "#fff" }}>Reignsound Presents&trade;</span><br />
-            <a href="mailto:press.reignsound@gmail.com">press.reignsound@gmail.com</a><br />
-            Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
-          </li>  
+          </li> 
         </ol>
 
         <h6 className="sub-sub-sub-subsection-title">Federal Authorities</h6>
