@@ -436,8 +436,7 @@ export default function Page() {
       {/* Reignsound™ Subsidiary Directory */}
       <section className="subsidiary-directory">
         <h2 style={{ textAlign: "center", marginBottom: "3rem" }}>
-          Reignsound
-          <sup style={{ fontFamily: "IBM Plex Sans Condensed" }}>&trade;</sup> Subsidiary Directory
+          Reignsound&trade; Subsidiary Directory
         </h2>
 
         <div className="subsidiary-grid">
