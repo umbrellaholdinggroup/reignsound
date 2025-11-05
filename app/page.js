@@ -254,31 +254,39 @@ export default function Page() {
       <h2>Disclaimers &amp; Protections (D&P)</h2>
       <div className="disclaimer-list" style={{ color: "#ccc" }}>
         <div>
-          <strong>1. OWNERSHIP RIGHTS:</strong><br />
-          All Goods or Services provided by Reignsound&trade; are produced and owned solely by Reignsound&trade;, or in collaboration with partners under proper agreements, rights, and licenses where applicable.
+          <p>
+            <strong>1. OWNERSHIP RIGHTS:</strong><br />
+            All Goods or Services provided by Reignsound&trade; are produced and owned solely by Reignsound&trade;, or in collaboration with partners under proper agreements, rights, and licenses where applicable.
+          </p>
         </div><br />
 
         <div>
-          <strong>2. LEGAL:</strong><br />
-          Reignsound&trade; takes precautionary steps<sup>2</sup> to ensure Goods and Services are in compliance with global regulations.
-          <div className="sub-sub-subsection-description">
-            For any discrepancies or legal inquiries regarding Reignsound&trade; or any Reignsound&trade; subsidiaries, contact:<br />
-            <a href="mailto:legal.uhgc@gmail.com" className="standalone-e-mail">legal.uhgc@gmail.com</a><br />
-          </div>
+          <p>
+            <strong>2. LEGAL:</strong><br />
+            Reignsound&trade; takes precautionary steps<sup>2</sup> to ensure Goods and Services are in compliance with global regulations.
+            <div className="sub-sub-subsection-description">
+              For any discrepancies or legal inquiries regarding Reignsound&trade; or any Reignsound&trade; subsidiaries, contact:<br />
+              <a href="mailto:legal.uhgc@gmail.com" className="standalone-e-mail">legal.uhgc@gmail.com</a><br />
+            </div>
+          </p>
         </div><br />
 
         <div>
-          <strong>3. FEEDBACK:</strong><br />
-          Reignsound&trade; values your input &mdash; let us know what you think &mdash; it helps us improve our Goods and Services.
-          <div className="sub-sub-subsection-description">
-            Send feedback to:<br />
-            <a href="mailto:feedback.uhgc@gmail.com" className="standalone-e-mail">feedback.uhgc@gmail.com</a>
-          </div>
+          <p>
+            <strong>3. FEEDBACK:</strong><br />
+            Reignsound&trade; values your input &mdash; let us know what you think &mdash; it helps us improve our Goods and Services.
+            <div className="sub-sub-subsection-description">
+              Send feedback to:<br />
+              <a href="mailto:feedback.uhgc@gmail.com" className="standalone-e-mail">feedback.uhgc@gmail.com</a>
+            </div>
+          </p>
         </div><br />
 
         <div>
+          <p>
           <strong>4. TRADEMARKS:</strong><br />
           Reignsound&trade; respects all intellectual property laws: all trademarks and copyrights remain property of their respective owners.
+          </p>
         </div>
       </div>
 
