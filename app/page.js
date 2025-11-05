@@ -433,42 +433,22 @@ export default function Page() {
 
       <hr style={{ borderTop: '5px dashed #1c1c1c', margin: '20px 0' }} />
 
-     {/* Reignsound™ Subsidiary Directory */}
-<section className="subsidiary-directory">
-  <h2 style={{ textAlign: "center", marginBottom: "3rem" }}>
-    Reignsound
-    <sup style={{ fontFamily: "IBM Plex Sans Condensed" }}>&trade;</sup> Subsidiary Directory
-  </h2>
+      {/* Reignsound™ Subsidiary Directory */}
+      <section className="subsidiary-directory">
+        <h2 style={{ textAlign: "center", marginBottom: "3rem" }}>
+          Reignsound
+          <sup style={{ fontFamily: "IBM Plex Sans Condensed" }}>&trade;</sup> Subsidiary Directory
+        </h2>
 
-  {(() => {
-    const subsidiaries = getSubsidiaryList(subsidiariesList).sort((a, b) =>
-      a.localeCompare(b)
-    );
-    const total = subsidiaries.length;
-    const remainder = total % 3;
-    const needsCentering = remainder === 1; // only one in last row
+        <div className="subsidiary-grid">
+          {getSubsidiaryList(subsidiariesList)
+            .sort((a, b) => a.localeCompare(b))
+            .map((name, i, arr) => (
+              <div key={i}>{name}</div>
+            ))}
+        </div>
+      </section>
 
-    return (
-      <div className="subsidiary-grid">
-        {subsidiaries.map((name, i) => {
-          const isLast = i === total - 1;
-          const isSingleInLastRow = needsCentering && isLast;
-
-          return (
-            <div
-              key={i}
-              style={{
-                gridColumn: isSingleInLastRow ? "2 / span 1" : "auto",
-              }}
-            >
-              {name}
-            </div>
-          );
-        })}
-      </div>
-    );
-  })()}
-</section>
 
 
 

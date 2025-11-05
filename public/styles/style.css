@@ -317,7 +317,7 @@ sup {
   gap: 1rem;
   text-align: center;
   color: #ccc;
-  grid-template-columns: 1fr; /* mobile default */
+  grid-template-columns: 1fr !important; /* force single column on mobile */
 }
 
 .subsidiary-grid > div {
@@ -335,13 +335,13 @@ sup {
 /* tablet: 2 columns */
 @media (min-width: 600px) {
   .subsidiary-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
 /* desktop: 3 columns */
 @media (min-width: 1024px) {
   .subsidiary-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 }
