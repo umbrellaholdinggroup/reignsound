@@ -304,3 +304,23 @@ sup {
   font-size:0.5em;
   vertical-align: 0.7em;
 }
+
+.subsidiary-grid {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  color: #ccc;
+  grid-template-columns: 1fr; /* mobile default */
+}
+
+@media (min-width: 600px) {
+  .subsidiary-grid {
+    grid-template-columns: repeat(2, 1fr); /* tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .subsidiary-grid {
+    grid-template-columns: repeat(3, 1fr); /* desktops */
+  }
+}

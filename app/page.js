@@ -437,7 +437,7 @@ export default function Page() {
 
       <hr style={{ borderTop: '5px dashed #1c1c1c', margin: '20px 0' }} />
 
-      {/* Reignsound™ Subsidiary Directory */}
+     {/* Reignsound™ Subsidiary Directory */}
 <section className="subsidiary-directory" style={{ marginTop: "0rem", paddingTop: "0rem" }}>
   <h2 style={{ textAlign: "center", marginBottom: "3rem" }}>
     Reignsound
@@ -455,15 +455,7 @@ export default function Page() {
     const needsCentering = remainder === 1; // Only one item in last row
 
     return (
-      <div
-        style={{
-          display: "grid",
-          gap: "1rem",
-          textAlign: "center",
-          color: "#ccc",
-          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", // responsive grid
-        }}
-      >
+      <div className="subsidiary-grid">
         {subsidiaries.map((name, i) => {
           const isLast = i === total - 1;
           const isSingleInLastRow = needsCentering && isLast;
@@ -491,6 +483,7 @@ export default function Page() {
     );
   })()}
 </section>
+
 
 
       <hr style={{ borderTop: '5px dashed #1c1c1c', margin: '20px 0' }} />
