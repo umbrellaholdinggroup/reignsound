@@ -4,6 +4,7 @@ import "../public/styles/style.css";
 import Image from "next/image";
 import fs from "fs";
 import path from "path";
+import getExistingLogos from "@/lib/getExistingLogos";
 
 export const metadata = {
   title: "Reignsound",
@@ -86,21 +87,6 @@ function getSubsidiaryList(list) {
   }
 
   return padded;
-}
-
-// Helper: only include logos that actually exist in /public/[dir]
-function getExistingLogos(dir, total) {
-  const logos = [];
-  for (let i = 1; i <= total; i++) {
-    const filePath = path.join(process.cwd(), "public", dir, `logo-${i}.png`);
-    if (fs.existsSync(filePath)) {
-      logos.push({
-        logo: `/${dir}/logo-${i}.png`,
-        url: "#",
-      });
-    }
-  }
-  return logos;
 }
 
 export default function Page() {

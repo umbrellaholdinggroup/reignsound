@@ -252,6 +252,7 @@ li a[href^="http"] { font-weight: bold; text-decoration: underline; color: var(-
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .scroll-row a {
@@ -353,3 +354,4 @@ h1, h2, h3, h4, h5, h6 {
   overflow-wrap: normal;
   word-break: keep-all;
 }
+
