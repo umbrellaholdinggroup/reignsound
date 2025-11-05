@@ -75,20 +75,16 @@ const subsidiariesList = [
   "FIRM Capital & Marketing"
 ];
 
-// Ensure at least 40 items, alphabetically sorted — no upper limit
+// Return an alphabetized list of subsidiaries, padded to 40 placeholders if needed
 function getSubsidiaryList(list) {
   const sorted = [...list].sort((a, b) => a.localeCompare(b));
-  const total = 40;
+  const total = Math.max(sorted.length, 40); // dynamically supports >40
   const padded = [...sorted];
 
-  // Only pad if we have fewer than 40
-  if (sorted.length < total) {
-    for (let i = sorted.length + 1; i <= total; i++) {
-      padded.push(`Company ${i}`);
-    }
+  for (let i = sorted.length + 1; i <= total; i++) {
+    padded.push(`Company ${i}`);
   }
 
-  // ✅ No more slicing — now returns *all* companies
   return padded;
 }
 
@@ -438,21 +434,19 @@ export default function Page() {
       <hr style={{ borderTop: '5px dashed #1c1c1c', margin: '20px 0' }} />
 
      {/* Reignsound™ Subsidiary Directory */}
-<section className="subsidiary-directory" style={{ marginTop: "0rem", paddingTop: "0rem" }}>
+<section className="subsidiary-directory">
   <h2 style={{ textAlign: "center", marginBottom: "3rem" }}>
     Reignsound
     <sup style={{ fontFamily: "IBM Plex Sans Condensed" }}>&trade;</sup> Subsidiary Directory
   </h2>
 
   {(() => {
-    // Alphabetize subsidiaries
     const subsidiaries = getSubsidiaryList(subsidiariesList).sort((a, b) =>
       a.localeCompare(b)
     );
-
     const total = subsidiaries.length;
     const remainder = total % 3;
-    const needsCentering = remainder === 1; // Only one item in last row
+    const needsCentering = remainder === 1; // only one in last row
 
     return (
       <div className="subsidiary-grid">
@@ -464,14 +458,6 @@ export default function Page() {
             <div
               key={i}
               style={{
-                backgroundColor: "#111",
-                borderRadius: "12px",
-                padding: "0.75rem",
-                boxShadow: "0 0 5px rgba(255,255,255,0.05)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                minHeight: "60px",
                 gridColumn: isSingleInLastRow ? "2 / span 1" : "auto",
               }}
             >
