@@ -68,7 +68,7 @@ const subsidiariesList = [
   { name: "TEAM-1", trademark: "unregistered" },
   { name: "The FIRM Group", trademark: "unregistered" },
   { name: "Top Notch Records", trademark: "unregistered" },
-  { name: "Trap Handbook", trademark: "unregistered" },
+  { name: "Trap Handbook (Series)", trademark: "unregistered" },
   { name: "UMBRELLA Holding Group Company", trademark: "unregistered" },
   { name: "Universal Broadcasting Network", trademark: "unregistered" },
   { name: "VENTURE-1", trademark: "unregistered" }
