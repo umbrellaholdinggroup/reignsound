@@ -485,7 +485,7 @@ export default function Page() {
       <hr style={{ borderTop: '5px dashed #1c1c1c', margin: '20px 0' }} />
 
       <p style={{ fontSize: '10px' }}>
-        1. Reignsound&trade; is a holding company &mdash; a type of business entity that owns or manages other companies, rather than producing goods or services itself.
+        1. Reignsound&trade; (the "Company") is a holding company &mdash; a type of business entity that owns or manages other companies, rather than producing goods or services itself.
       </p>
 
       <p style={{ fontSize: '10px' }}>
