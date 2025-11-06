@@ -248,7 +248,7 @@ export default function Page() {
         The "Agreement Purpose" clarifies: (1) why the agreement exists and (2) what it seeks to achieve.
       </p>
       <p>
-        1. This document governs all Reignsound&trade; business activities and ensures that all parties involved in said activities understand their rights and responsibilities when accessing, producing, or using Reignsound&trade; Goods or Services.
+        1. This document governs all Reignsound&trade; business activities and ensures that all parties involved in said activities understand their rights and responsibilities when accessing, producing, or using Reignsound&trade; Goods and Services.
       </p>
       <p>
         2. This Agreement aims to protect both the Company and its users by establishing clear guidelines for acceptable behavior, data privacy, intellectual property rights, and dispute resolution.
