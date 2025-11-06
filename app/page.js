@@ -16,74 +16,75 @@ export const metadata = {
 
 // Your real subsidiaries
 const subsidiariesList = [
-  "ATAAH KING",
-  "Reignsound Studios",
-  "Reignsound Media",
-  "Apparel by Reignsound",
-  "Reignsound Presents",
-  "Reignsound Global",
-  "COMPANY-1",
-  "FAVORITE RAPPER inc.",
-  "Reignsound Records",
-  "UMBRELLA Holding Group Company",
-  "ReignsoundXL",
-  "AD-1",
-  "BRAND-1",
-  "CHANNEL-1",
-  "PAGE-1",
-  "TEAM-1",
-  "PARTNER-1",
-  "SOURCE-1",
-  "VENTURE-1",
-  "STATION-1",
-  "STORE-1",
-  "STUDIO-1",
-  "Reignsound Affiliates",
-  "Mainstream Label Network",
-  "Reignsound Holdings",
-  "Reignsound Analytics",
-  "Reignsound Board",
-  "Public Production Company",
-  "Universal Broadcasting Network",
-  "PRESS-1",
-  "A1 Music Group",
-  "ADMIN-1",
-  "Sound and Friends (Series)",
-  "Top Notch Records",
-  "Reignsound Finance",
-  "Reignsound Innovations",
-  "Reignsound Ventures",
-  "Reignsound News",
-  "ATAAH KING News",
-  "Reignsound Philanthropies",
-  "Reignsound Ads",
-  "Merch by Reignsound",
-  "Reignsound Commercial",
-  "Reignsound Press",
-  "Reignsound Productions",
-  "Reignsound Publishing",
-  "Reignsound Recreational Center",
-  "Reignsound Gear",
-  "Reignsound Tech",
-  "Soundwork (Series) by Reignsound",
-  "SQUARE-1",
-  "Reignsound Headquarters",
-  "BIG PICTURE",
-  "Trap Handbook",
-  "Numbers LLC",
-  "NOBRANDJUSTGOD",
-  "The FIRM Group",
-  "FIRM Capital & Marketing"
+  { name: "A1 Music Group", trademark: "unregistered" },
+  { name: "AD-1", trademark: "unregistered" },
+  { name: "ADMIN-1", trademark: "unregistered" },
+  { name: "Apparel by Reignsound", trademark: "unregistered" },
+  { name: "ATAAH KING", trademark: "unregistered" },
+  { name: "ATAAH KING News", trademark: "unregistered" },
+  { name: "BIG PICTURE", trademark: "unregistered" },
+  { name: "BRAND-1", trademark: "unregistered" },
+  { name: "CHANNEL-1", trademark: "unregistered" },
+  { name: "COMPANY-1", trademark: "unregistered" },
+  { name: "FAVORITE RAPPER inc.", trademark: "unregistered" },
+  { name: "FIRM Capital & Marketing", trademark: "unregistered" },
+  { name: "Mainstream Label Network", trademark: "unregistered" },
+  { name: "Merch by Reignsound", trademark: "unregistered" },
+  { name: "NOBRANDJUSTGOD", trademark: "unregistered" },
+  { name: "Numbers LLC", trademark: "unregistered" },
+  { name: "PAGE-1", trademark: "unregistered" },
+  { name: "PARTNER-1", trademark: "unregistered" },
+  { name: "PRESS-1", trademark: "unregistered" },
+  { name: "Public Production Company", trademark: "unregistered" },
+  { name: "Reignsound Ads", trademark: "unregistered" },
+  { name: "Reignsound Analytics", trademark: "unregistered" },
+  { name: "Reignsound Board", trademark: "unregistered" },
+  { name: "Reignsound Commercial", trademark: "unregistered" },
+  { name: "Reignsound Finance", trademark: "unregistered" },
+  { name: "Reignsound Global", trademark: "unregistered" },
+  { name: "Reignsound Holdings", trademark: "unregistered" },
+  { name: "Reignsound Innovations", trademark: "unregistered" },
+  { name: "Reignsound Media", trademark: "unregistered" },
+  { name: "Reignsound News", trademark: "unregistered" },
+  { name: "Reignsound Philanthropies", trademark: "unregistered" },
+  { name: "Reignsound Press", trademark: "unregistered" },
+  { name: "Reignsound Presents", trademark: "unregistered" },
+  { name: "Reignsound Productions", trademark: "unregistered" },
+  { name: "Reignsound Publishing", trademark: "unregistered" },
+  { name: "Reignsound Records", trademark: "unregistered" },
+  { name: "Reignsound Recreational Center", trademark: "unregistered" },
+  { name: "Reignsound Studios", trademark: "unregistered" },
+  { name: "Reignsound Tech", trademark: "unregistered" },
+  { name: "Reignsound Ventures", trademark: "unregistered" },
+  { name: "ReignsoundXL", trademark: "unregistered" },
+  { name: "Reignsound Affiliates", trademark: "unregistered" },
+  { name: "Reignsound Headquarters", trademark: "unregistered" },
+  { name: "Sound and Friends (Series)", trademark: "unregistered" },
+  { name: "Soundwork (Series) by Reignsound", trademark: "unregistered" },
+  { name: "SQUARE-1", trademark: "unregistered" },
+  { name: "STATION-1", trademark: "unregistered" },
+  { name: "STORE-1", trademark: "unregistered" },
+  { name: "STUDIO-1", trademark: "unregistered" },
+  { name: "TEAM-1", trademark: "unregistered" },
+  { name: "The FIRM Group", trademark: "unregistered" },
+  { name: "Top Notch Records", trademark: "unregistered" },
+  { name: "Trap Handbook", trademark: "unregistered" },
+  { name: "UMBRELLA Holding Group Company", trademark: "unregistered" },
+  { name: "Universal Broadcasting Network", trademark: "unregistered" },
+  { name: "VENTURE-1", trademark: "unregistered" }
 ];
 
 // Return an alphabetized list of subsidiaries, padded to 40 placeholders if needed
 function getSubsidiaryList(list) {
-  const sorted = [...list].sort((a, b) => a.localeCompare(b));
+  // Sort by name
+  const sorted = [...list].sort((a, b) => a.name.localeCompare(b.name));
+
   const total = Math.max(sorted.length, 40); // dynamically supports >40
   const padded = [...sorted];
 
-  for (let i = sorted.length + 1; i <= total; i++) {
-    padded.push(`Company ${i}`);
+  // Fill remaining slots with placeholder objects
+  for (let i = sorted.length; i < total; i++) {
+    padded.push({ name: `Company ${i + 1}`, trademark: "unregistered" });
   }
 
   return padded;
@@ -117,7 +118,7 @@ export default function Page() {
       </p>
 
       <p className="document-description">
-        This web document serves as the official digital agreement ("Agreement") between Reignsound&trade; ("Company") and all users accessing or interacting with the platforms, products, and/or services of the Company's subsidiaries &mdash; collectively, the Company's "Goods and Services," each, a "Good" or "Service" &mdash; including this website (https://reignsound.vercel.app).
+        This web document serves as the official Master Agreement ("Agreement") between Reignsound&trade; ("Company") and all users accessing or interacting with the platforms, products, and/or services of the Company's subsidiaries &mdash; collectively, the Company's "Goods and Services," each, a "Good" or "Service".
       </p>
 
       <h2 className="section-title">Terms and Conditions (T&amp;C)</h2>
@@ -134,13 +135,13 @@ export default function Page() {
 
       <h4 className="sub-subsection-title">Agreement Authority</h4>
       <p className="subsection-description">
-        The "Agreement Authority" defines the scope and intent of the Agreement — each Reignsound&trade; Good or Service is governed by its own sub-agreement, which falls under the umbrella of this master Agreement.
+        The "Agreement Authority" defines the scope and intent of agreements — each Reignsound&trade; Good or Service is governed by its own sub-agreement, which falls under the umbrella of this Master Agreement.
       </p>
 
       <div className="list">
         <h5 className="sub-sub-subsection-title">Agreement Authority List</h5>
         <p className="sub-subsection-description">
-          The "Agreement Authority List" recognizes authorities responsible for creating, approving, and enforcing Agreements.
+          The "Agreement Authority List" recognizes authorities responsible for creating, approving, and enforcing agreements.
         </p>
 
         <h6 className="sub-sub-sub-subsection-title">Internal Authorities</h6>
@@ -235,7 +236,7 @@ export default function Page() {
         The "Agreement Purpose" clarifies: (1) why the agreement exists and (2) what it seeks to achieve.
       </p>
       <p>
-        1. This document governs all Reignsound&trade; business activities and ensures that all parties involved in said activities understand their rights and responsibilities when accessing or using Reignsound&trade; Goods or Services.
+        1. This document governs all Reignsound&trade; business activities and ensures that all parties involved in said activities understand their rights and responsibilities when accessing, producing, or using Reignsound&trade; Goods or Services.
       </p>
       <p>
         2. This Agreement aims to protect both the Company and its users by establishing clear guidelines for acceptable behavior, data privacy, intellectual property rights, and dispute resolution.
@@ -462,11 +463,20 @@ export default function Page() {
 
         <div className="subsidiary-grid">
           {getSubsidiaryList(subsidiariesList)
-            .sort((a, b) => a.localeCompare(b))
-            .map((name, i, arr) => (
-              <div key={i}>{name}</div>
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((subsidiary, i) => (
+              <div key={i}>
+                <span className="brand-name">{subsidiary.name}</span>
+                {subsidiary.trademark === "unregistered" && (
+                  <span className="trademark-symbol" aria-hidden="true">&trade;</span>
+                )}
+                {subsidiary.trademark === "registered" && (
+                  <span className="trademark-symbol" aria-hidden="true">&reg;</span>
+                )}
+              </div>
             ))}
         </div>
+
       </section>
 
 

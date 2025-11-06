@@ -355,3 +355,9 @@ h1, h2, h3, h4, h5, h6 {
   word-break: keep-all;
 }
 
+.trademark-symbol {
+  font-size: 1em;
+  vertical-align: super;
+  margin-left: 0.1em;
+  color: #555; /* subtle */
+}
