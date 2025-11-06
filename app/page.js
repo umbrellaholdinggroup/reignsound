@@ -259,27 +259,28 @@ export default function Page() {
             All Goods or Services provided by Reignsound&trade; are produced and owned solely by Reignsound&trade;, or in collaboration with partners under proper agreements, rights, and licenses where applicable.
           </p>
         </div><br />
+        
 
         <div>
           <p>
             <strong>2. LEGAL:</strong><br />
             Reignsound&trade; takes precautionary steps<sup>2</sup> to ensure Goods and Services are in compliance with global regulations.
-            <div className="sub-sub-subsection-description">
-              For any discrepancies or legal inquiries regarding Reignsound&trade; or any Reignsound&trade; subsidiaries, contact:<br />
-              <a href="mailto:legal.uhgc@gmail.com" className="standalone-e-mail">legal.uhgc@gmail.com</a><br />
-            </div>
           </p>
+          <div className="sub-sub-subsection-description">
+            For any discrepancies or legal inquiries regarding Reignsound&trade; or any Reignsound&trade; subsidiaries, contact:<br />
+            <a href="mailto:legal.uhgc@gmail.com" className="standalone-e-mail">legal.uhgc@gmail.com</a><br />
+          </div>
         </div><br />
 
         <div>
           <p>
             <strong>3. FEEDBACK:</strong><br />
             Reignsound&trade; values your input &mdash; let us know what you think &mdash; it helps us improve our Goods and Services.
-            <div className="sub-sub-subsection-description">
-              Send feedback to:<br />
-              <a href="mailto:feedback.uhgc@gmail.com" className="standalone-e-mail">feedback.uhgc@gmail.com</a>
-            </div>
           </p>
+          <div className="sub-sub-subsection-description">
+            Send feedback to:<br />
+            <a href="mailto:feedback.uhgc@gmail.com" className="standalone-e-mail">feedback.uhgc@gmail.com</a>
+          </div>
         </div><br />
 
         <div>
@@ -289,6 +290,44 @@ export default function Page() {
           </p>
         </div>
       </div>
+
+      {/* Reignsound™ asSeenOn Section */}
+      <h2 style={{ fontFamily: "var(--font-sans)", textAlign: "center" }}>AS SEEN ON:</h2>
+
+      {(() => {
+        const asSeenOn = getExistingLogos("asSeenOn", 40);
+        if (asSeenOn.length === 0) return null;
+
+        const rows = [0, 1, 2];
+        return (
+          <div className="asSeenOn-carousel">
+            {rows.map((rowIndex) => {
+              const offset = Math.floor((rowIndex * asSeenOn.length) / 3);
+              const rowLogos = [
+                ...asSeenOn.slice(offset),
+                ...asSeenOn.slice(0, offset),
+              ];
+              const duplicated = [...rowLogos, ...rowLogos];
+
+              return (
+                <div key={rowIndex} className={`scroll-row scroll-row-${rowIndex + 1}`}>
+                  {duplicated.map((item, i) => (
+                    <a key={i} href={item.url} target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src={item.logo}
+                        alt={`Partner ${i + 1}`}
+                        width={150}
+                        height={150}
+                        style={{ objectFit: "contain" }}
+                      />
+                    </a>
+                  ))}
+                </div>
+              );
+            })}
+          </div>
+        );
+      })()}
 
       {/* Reignsound™ Partners Section */}
       <h2>Reignsound™ Partners</h2>
