@@ -169,6 +169,18 @@ export default function Page() {
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
             Website: <a href="https://reignsound.vercel.app">reignsound.vercel.app</a>
           </li> 
+
+          <li>
+            <span style={{ color: "#fff" }}>Reignsound Global&trade;</span><br />
+            <a href="mailto:press.reignsound@gmail.com">press.reignsound@gmail.com</a><br />
+            Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
+          </li>
+
+          <li>
+            <span style={{ color: "#fff" }}>Reignsound Presents&trade;</span><br />
+            <a href="mailto:press.reignsound@gmail.com">press.reignsound@gmail.com</a><br />
+            Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
+          </li>  
         </ol>
 
         <h6 className="sub-sub-sub-subsection-title">Federal Authorities</h6>
@@ -466,10 +478,15 @@ export default function Page() {
             .sort((a, b) => a.name.localeCompare(b.name))
             .map((subsidiary, i) => (
               <div key={i}>
-                <span className="brand-name">{subsidiary.name}</span>
-                {subsidiary.trademark === "unregistered" && (
-                  <span className="trademark-symbol" aria-hidden="true">&trade;</span>
-                )}
+                <div key={i} className="subsidiary-name">
+                  <span className="brand-name">{subsidiary.name}</span>
+                  {subsidiary.trademark === "unregistered" && (
+                    <span className="trademark-symbol">&trade;</span>
+                  )}
+                  {subsidiary.trademark === "registered" && (
+                    <span className="trademark-symbol">&reg;</span>
+                  )}
+                </div>
                 {subsidiary.trademark === "registered" && (
                   <span className="trademark-symbol" aria-hidden="true">&reg;</span>
                 )}
