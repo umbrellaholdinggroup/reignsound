@@ -135,7 +135,7 @@ export default function Page() {
 
       <h4 className="sub-subsection-title">Agreement Authority</h4>
       <p className="subsection-description">
-        The "Agreement Authority" defines the scope and intent of agreements — each Reignsound&trade; Good or Service is governed by its own sub-agreement, which falls under the umbrella of this Master Agreement.
+        The "Agreement Authority" defines the scope and intent of agreements — each Reignsound&trade; Good or Service is governed by its own sub-agreement, which falls under the umbrella of this Agreement.
       </p>
 
       <div className="list">
@@ -511,7 +511,8 @@ export default function Page() {
 
       <hr style={{ borderTop: '5px dashed #1c1c1c' }} />
 
-      <footer>© Reignsound&trade;</footer>
+      <footer>
+        &copy; Reignsound&trade;</footer>
     </main>
   );
 }
