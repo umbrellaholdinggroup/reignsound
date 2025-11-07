@@ -171,14 +171,14 @@ export default function Page() {
           </li> 
 
           <li>
-            <span style={{ color: "#fff" }}>Reignsound Global&trade;</span><br />
-            <a href="mailto:press.reignsound@gmail.com">press.reignsound@gmail.com</a><br />
+            <span style={{ color: "#fff" }}>Reignsound Board&trade;</span><br />
+            <a href="mailto:reignsound@email.com">reignsound@email.com</a><br />
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
           </li>
 
           <li>
-            <span style={{ color: "#fff" }}>Reignsound Presents&trade;</span><br />
-            <a href="mailto:press.reignsound@gmail.com">press.reignsound@gmail.com</a><br />
+            <span style={{ color: "#fff" }}>The FIRM Group&trade;</span><br />
+            <a href="mailto:reignsound@email.com">reignsound@email.com</a><br />
             Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
           </li>  
         </ol>
