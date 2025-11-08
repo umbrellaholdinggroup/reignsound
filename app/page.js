@@ -153,7 +153,6 @@ export default function Page() {
           <li>
             <span style={{ color: "#fff" }}>ATAAH KING&trade;</span><br />
             <a href="mailto:press.reignsound@gmail.com">business.ataahking@gmail.com</a><br />
-            Phone: <a href="tel:+19295153507" className="phone-link">+1 929 515 3507</a><br />
           </li>
 
           <li>
